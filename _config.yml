@@ -8,15 +8,12 @@ middle_name:
 last_name: Yao
 email: kai.yao@ed.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: deep learning, fairness, privacy, security  # add your own keywords or leave empty
+  Personal homepage.
+footer_text: 
+keywords: machine learning, deep learning, fairness, privacy, security  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🥥  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: 🎲  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
 url: https://kaikaiyao.github.io # the base hostname & protocol for your site
 baseurl:  # the subpath of your site, e.g. /blog/
@@ -127,10 +124,10 @@ permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
-  enabled: true
+  enabled: false
 
 related_blog_posts:
-  enabled: true
+  enabled: false
   max_related: 5
 
 # Giscus comments (RECOMMENDED)
