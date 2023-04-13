@@ -118,7 +118,7 @@
   <ol class="bibliography"><li>
 <!-- _layouts/bib.html -->
       <div class="row">
-        <div class="col-sm-2 abbr"></div>
+        <div class="col-sm-2 abbr"><abbr class="badge">SciRep</abbr></div>
 
         <!-- Entry bib key -->
         <div id="yao2019cell" class="col-sm-8">
@@ -142,6 +142,10 @@
 
           <!-- Links/Buttons -->
           <div class="links">
+            <a class="abstract btn btn-sm z-depth-0" role="button">Abs</a>
+            <a class="bibtex btn btn-sm z-depth-0" role="button">Bib</a>
+            <a href="/assets/pdf/sci_rep_cell_type_classification.pdf" class="btn btn-sm z-depth-0" role="button">PDF</a>
+            <a href="https://www.nature.com/articles/s41598-019-50010-9" class="btn btn-sm z-depth-0" role="button" rel="external nofollow noopener" target="_blank">Website</a>
           </div>
           
           <div class="badges">
@@ -149,7 +153,23 @@
               <span class="__dimensions_badge_embed__" data-pmid="" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right" style="margin-bottom: 3px;"></span>
           </div>
 
-          
+          <!-- Hidden abstract block -->
+          <div class="abstract hidden">
+            <p>Convolutional neural networks (ConvNets) have proven to be successful in both the classification and semantic segmentation of cell images. Here we establish a method for cell type classification utilizing images taken with a benchtop microscope directly from cell culture flasks, eliminating the need for a dedicated imaging platform. Significant flask-to-flask morphological heterogeneity was discovered and overcome to support network generalization to novel data. Cell density was found to be a prominent source of heterogeneity even when cells are not in contact. For the same cell types, expert classification was poor for single-cell images and better for multi-cell images, suggesting experts rely on the identification of characteristic phenotypes within subsets of each population. We also introduce Self-Label Clustering (SLC), an unsupervised clustering method relying on feature extraction from the hidden layers of a ConvNet, capable of cellular morphological phenotyping. This clustering approach is able to identify distinct morphological phenotypes within a cell type, some of which are observed to be cell density dependent. Finally, our cell classification algorithm was able to accurately identify cells in mixed populations, showing that ConvNet cell type classification can be a label-free alternative to traditional cell sorting and identification.</p>
+          </div>
+<!-- Hidden bibtex block -->
+          <div class="bibtex hidden">
+            <figure class="highlight"><pre><code class="language-bibtex" data-lang="bibtex"><span class="nc">@article</span><span class="p">{</span><span class="nl">yao2019cell</span><span class="p">,</span>
+  <span class="na">title</span> <span class="p">=</span> <span class="s">{Cell type classification and unsupervised morphological phenotyping from low-resolution images using deep learning}</span><span class="p">,</span>
+  <span class="na">author</span> <span class="p">=</span> <span class="s">{Yao, Kai and Rochman, Nash D and Sun, Sean X}</span><span class="p">,</span>
+  <span class="na">journal</span> <span class="p">=</span> <span class="s">{Scientific reports}</span><span class="p">,</span>
+  <span class="na">volume</span> <span class="p">=</span> <span class="s">{9}</span><span class="p">,</span>
+  <span class="na">number</span> <span class="p">=</span> <span class="s">{1}</span><span class="p">,</span>
+  <span class="na">pages</span> <span class="p">=</span> <span class="s">{1--13}</span><span class="p">,</span>
+  <span class="na">year</span> <span class="p">=</span> <span class="s">{2019}</span><span class="p">,</span>
+  <span class="na">publisher</span> <span class="p">=</span> <span class="s">{Springer}</span><span class="p">,</span>
+<span class="p">}</span></code></pre></figure>
+          </div>
         </div>
       </div>
 </li></ol>
