@@ -19,8 +19,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I am currently pursuing my PhD in the [School of Informatics](https://www.ed.ac.uk/informatics) at [The University of Edinburgh](https://www.ed.ac.uk/), with my research focus centered around **Privacy, Security, and Fairness in Deep Learning**. I received my Bachelor’s degree in Theoretical and Applied Mechanics from [Fudan University](https://www.fudan.edu.cn/en/) and my Master’s degree in Mechanical Engineering from [Johns Hopkins University](https://www.jhu.edu/). Prior to joining [The University of Edinburgh](https://www.ed.ac.uk/), I also gained industry experiences by working as a AI Algorithm Engineer at both Huawei and Intel.
