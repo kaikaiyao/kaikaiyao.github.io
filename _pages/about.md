@@ -19,8 +19,8 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am currently pursuing my PhD in the [School of Informatics](https://www.ed.ac.uk/informatics) at the [University of Edinburgh](https://www.ed.ac.uk/), with my research focus centered around **Privacy, Security, and Fairness in Machine Learning** (advisor: [Dr. Marc Juarez](https://mjuarezm.github.io/)). 
+I am currently pursuing a PhD in the [School of Informatics](https://www.ed.ac.uk/informatics) at the [University of Edinburgh](https://www.ed.ac.uk/), where my research focuses on **Privacy, Security, and Fairness in Machine Learning**, under the guidance of my advisor [Dr. Marc Juarez](https://mjuarezm.github.io/).
 
-I received my Bachelor’s degree in Theoretical and Applied Mechanics from [Fudan University](https://www.fudan.edu.cn/en/) and my Master’s degree in Mechanical Engineering from [Johns Hopkins University](https://www.jhu.edu/). 
+I earned my Bachelor’s degree in Theoretical and Applied Mechanics from [Fudan University](https://www.fudan.edu.cn/en/) and my Master’s degree in Mechanical Engineering from [Johns Hopkins University](https://www.jhu.edu/). 
 
-Prior to joining the University of Edinburgh, I also acquired valuable industry experience as an AI Frameworks Engineer and Domain Lead at [Intel](https://www.intel.com/content/www/us/en/homepage.html) and as an AI Algorithm Engineer at [Huawei](https://www.huawei.com/en/).
+Before joining the University of Edinburgh, I gained valuable industry experience as an AI Frameworks Engineer and Domain Lead at [Intel](https://www.intel.com/content/www/us/en/homepage.html), and as an AI Algorithm Engineer at [Huawei](https://www.huawei.com/en/).
