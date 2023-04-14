@@ -18,7 +18,7 @@
       #   - Description 1.
       #   - Description 2.
     - title: Bachelor of Science
-      institution: Fudan University, Shanghai, CHN
+      institution: Fudan University, Shanghai, CN
       year: 2017
       # description:
       #   - Description 1.
@@ -28,7 +28,7 @@
   type: time_table
   contents:
     - title: AI Frameworks Engineer & Project Lead
-      institution: Intel, Shanghai, CHN (Dept. AIA AIPC DL SH)
+      institution: Intel, Shanghai, CN (Dept. AIA AIPC DL SH)
       year: 2021 - 2023
       # description:
       #   - Description 1.
@@ -38,7 +38,7 @@
       #       - Sub-description 1.
       #       - Sub-description 2.
     - title: AI Algorithm Engineer
-      institution: Huawei, Shanghai, CHN (Dept. 5G Solutions Design)
+      institution: Huawei, Shanghai, CN (Dept. 5G Solutions Design)
       year: 2020 - 2021
       # description:
       #   - Description 1.
@@ -66,7 +66,7 @@
       #       - Sub-description 1.
       #       - Sub-description 2.
     - title: Visiting Scholar
-      institution: Osaka University, Osaka, JPN
+      institution: Osaka University, Osaka, JP
       year: 2014 - 2015
       # description:
       #   - Description 1.
