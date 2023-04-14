@@ -1,23 +1,22 @@
 - title: Education
   type: time_table
   contents:
-    - title: Doctor of Philosophy
+    - title: Ph. D. - Cyber Security, Privacy and Trust
       institution: University of Edinburgh, Edinburgh, UK
       year: 2023 - present
-      description: School of Informatics
       #   - Description 1.
       #   - Description 2.
       #   - title: Description 3.
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
-    - title: Master of Science
+    - title: M. Sc. - Mechanical Engineering
       institution: Johns Hopkins University, Baltimore, US
       year: 2020
       # description:
       #   - Description 1.
       #   - Description 2.
-    - title: Bachelor of Science
+    - title: B. Sc. - Theoretical and Applied Mechanics
       institution: Fudan University, Shanghai, CN
       year: 2017
       # description:
