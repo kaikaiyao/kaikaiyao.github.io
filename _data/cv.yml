@@ -1,7 +1,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD
+    - title: Doctor of Philosophy
       institution: University of Edinburgh, Edinburgh, UK
       year: 2023 - present
       # description:
@@ -52,9 +52,23 @@
       institution: Johns Hopkins Institute for NanoBioTechnology, Baltimore, US
       year: 2017 - 2020
 
-- title: Research Interests
+- title: Miscs
   type: time_table
   contents:
-    - title: Deep Learning
-      institution: Fairness, Privacy, Security
-      year: DL
+    - title: Visiting Scholar
+      institution: University of Notre Dame, South Bend, US
+      year: 2016
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: Visiting Scholar
+      institution: Osaka University, Osaka, JPN
+      year: 2014 - 2015
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+
