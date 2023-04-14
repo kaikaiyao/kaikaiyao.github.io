@@ -23,4 +23,4 @@ I am currently pursuing my PhD in the [School of Informatics](https://www.ed.ac.
 
 I received my Bachelor’s degree in Theoretical and Applied Mechanics from [Fudan University](https://www.fudan.edu.cn/en/) and my Master’s degree in Mechanical Engineering from [Johns Hopkins University](https://www.jhu.edu/). 
 
-Prior to joining the University of Edinburgh, I also gained industry experiences by working as an AI Algorithm Engineer at both Huawei and Intel.
+Before starting my research at the University of Edinburgh, I also acquired valuable industry experience as an AI Algorithm Engineer at Huawei and as an AI Frameworks Engineer at Intel.
