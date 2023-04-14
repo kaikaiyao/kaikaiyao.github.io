@@ -28,7 +28,7 @@
   type: time_table
   contents:
     - title: AI Frameworks Engineer, Domain Lead
-      institution: Intel, Shanghai, CN (AIA AIPC DL SH)
+      institution: Intel, Shanghai, CN
       year: 2021 - 2023
       # description:
       #   - Description 1.
@@ -38,7 +38,7 @@
       #       - Sub-description 1.
       #       - Sub-description 2.
     - title: AI Algorithm Engineer
-      institution: Huawei, Shanghai, CN (5G Solutions Design)
+      institution: Huawei, Shanghai, CN
       year: 2020 - 2021
       # description:
       #   - Description 1.
