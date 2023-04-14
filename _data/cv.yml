@@ -1,7 +1,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: Ph. D. - Cyber Security, Privacy and Trust
+    - title: PhD - Informatics
       institution: University of Edinburgh, Edinburgh, UK
       year: 2023 - present
       # description:
@@ -11,13 +11,13 @@
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
-    - title: M. Sc. - Mechanical Engineering
+    - title: MSc - Mechanical Engineering
       institution: Johns Hopkins University, Baltimore, US
       year: 2020
       # description:
       #   - Description 1.
       #   - Description 2.
-    - title: B. Sc. - Theoretical and Applied Mechanics
+    - title: BSc - Theoretical and Applied Mechanics
       institution: Fudan University, Shanghai, CN
       year: 2017
       # description:
@@ -52,7 +52,7 @@
       institution: Johns Hopkins Institute for NanoBioTechnology, Baltimore, US
       year: 2017 - 2020
 
-- title: Miscs
+- title: Visiting
   type: time_table
   contents:
     - title: Visiting Scholar
