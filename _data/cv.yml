@@ -1,65 +1,62 @@
-- title: General Information
+- title: General
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Kai Yao
+    - name: Affiliation
+      value: School of Informatics, University of Edinburgh
     - name: Languages
-      value: English, German
+      value: English, Chinese, Japanese
 
 - title: Education
   type: time_table
   contents:
     - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+      institution: University of Edinburgh, Edinburgh, UK
+      year: 2023 - present
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: Master of Science
+      institution: Johns Hopkins University, Baltimore, US
+      year: 2020
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+    - title: Bachelor of Science
+      institution: Fudan University, Shanghai, China 🇨🇳
+      year: 2017
+      # description:
+      #   - Description 1.
+      #   - Description 2.
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: AI Frameworks Engineer, Project Lead
+      institution: Intel Corporation, Shanghai, China
+      year: 2021 - 2023
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Org: AIA AIPC DL SH
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: AI Algorithm Engineer
+      institution: Huawei, Shanghai, China
+      year: 2020 - 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Org: 5G Solutions Design
 
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
+    - title: Research Scientist
+      institution: Johns Hopkins Institute for NanoBioTechnology, Baltimore, US
+      year: 2017 - 2020
 
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
 
 - title: Open Source Projects
   type: time_table
@@ -79,19 +76,14 @@
       items: 
         - Max Planck Medal
 
-- title: Academic Interests
-  type: nested_list
+- title: Research Interests
+  type: time_table
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: Deep Learning
+      institution: Fairness, Privacy, Security
+      year: DL
 
 - title: Other Interests
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Oboe, Vocal
