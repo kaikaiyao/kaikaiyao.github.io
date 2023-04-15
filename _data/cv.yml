@@ -76,8 +76,8 @@
   type: time_table
   contents:
     - institution: PyTorch, TensorFlow, Keras, Scikit-Learn
-      year: DL
-    - institution: Python, C++, MATLAB, Bash
+      year: DL/AI
+    - institution: Python, C++, MATLAB, SQL, Bash
       year: Coding
-    - institution: Linux, Cloud, Docker
+    - institution: Linux, Cloud Service, Docker
       year: Infra
