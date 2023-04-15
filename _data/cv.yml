@@ -55,7 +55,7 @@
 - title: Visiting
   type: time_table
   contents:
-    - title: Visiting Scholar
+    - title: Research Scholar
       institution: University of Notre Dame, South Bend, US
       year: 2016
       # description:
@@ -65,10 +65,19 @@
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
-    - title: Visiting Scholar
+    - title: Research Scholar
       institution: Osaka University, Osaka, JP
       year: 2014 - 2015
       # description:
       #   - Description 1.
       #   - Description 2.
 
+- title: Skills
+  type: time_table
+  contents:
+    - title: PyTorch, TensorFlow, Keras, Scikit-Learn
+      year: DL
+    - title: Python, C++, MATLAB, Bash
+      year: Coding
+    - title: Linux, Cloud, Docker
+      year: Infra
