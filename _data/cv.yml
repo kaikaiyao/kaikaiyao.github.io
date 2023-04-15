@@ -75,9 +75,9 @@
 - title: Skills
   type: time_table
   contents:
-    - title: PyTorch, TensorFlow, Keras, Scikit-Learn
+    - institution: PyTorch, TensorFlow, Keras, Scikit-Learn
       year: DL
-    - title: Python, C++, MATLAB, Bash
+    - institution: Python, C++, MATLAB, Bash
       year: Coding
-    - title: Linux, Cloud, Docker
+    - institution: Linux, Cloud, Docker
       year: Infra
