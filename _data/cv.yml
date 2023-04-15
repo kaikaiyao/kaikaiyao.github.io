@@ -75,9 +75,9 @@
 - title: Skills
   type: time_table
   contents:
-    - institution: PyTorch, TensorFlow, Keras, Scikit-Learn
+    - institution: PyTorch, TensorFlow/Keras, Scikit-Learn, Gradio
       year: DL/AI
-    - institution: Python, C++, MATLAB, SQL, Bash
+    - institution: Python, C++, MATLAB, Bash, Java
       year: Coding
-    - institution: Linux, Cloud Service, Docker
+    - institution: Linux, Cloud Services, Docker, Network, SQL
       year: Infra
