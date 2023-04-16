@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Neural Coder - a DL toolkit
-description: We created an automation tool that enables Deep Learning optimizations in PyTorch/TensorFlow model scripts with just one click.
+description: We developed an automation tool that enables DL optimizations in DL Python model scripts with just one click.
 img: 
 importance: 1
 category: "@Intel"
