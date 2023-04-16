@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Neural Coder + Alibaba Cloud
-description: We have partnered with Alibaba Cloud (Alibaba Platform for AI) to deliver better PyTorch coding productivity.
+description: We have partnered with Alibaba Cloud to deliver better PyTorch coding productivity.
 img: assets/img/project_neural_coder_alibaba_cloud.png
 importance: 2
 category: "@Intel AI"
