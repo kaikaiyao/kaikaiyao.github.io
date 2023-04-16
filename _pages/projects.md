@@ -2,7 +2,7 @@
 layout: page
 title: blogs
 permalink: /blogs/
-description: 
+description: Below are several blogs that I have authored throughout my current and past experiences.
 nav: true
 nav_order: 2
 display_categories: ["@Intel"]
