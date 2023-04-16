@@ -2,10 +2,10 @@
 layout: page
 title: blogs
 permalink: /blogs/
-description: blogs
+description: 
 nav: true
 nav_order: 2
-display_categories: [at Intel, at Johns Hopkins]
+display_categories: [at Intel]
 horizontal: false
 ---
 
