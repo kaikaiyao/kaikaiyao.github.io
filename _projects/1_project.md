@@ -1,6 +1,6 @@
 ---
 layout: page
-title: '"Neural Coder" - a DL toolkit'
+title: Neural Coder - a DL toolkit
 description: We created an automation tool that enables Deep Learning optimizations in PyTorch/TensorFlow model scripts with just one click.
 img: 
 importance: 1
