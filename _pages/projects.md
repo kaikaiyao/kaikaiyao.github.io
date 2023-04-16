@@ -5,7 +5,7 @@ permalink: /blogs/
 description: 
 nav: true
 nav_order: 2
-display_categories: [at Intel]
+display_categories: ["@Intel"]
 horizontal: false
 ---
 
