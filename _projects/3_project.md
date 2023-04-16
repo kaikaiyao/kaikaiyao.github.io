@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Neural Coder Partners HuggingFace
-description: One-Click Acceleration of Hugging Face Transformers with Intel’s Neural Coder
+title: Neural Coder + HuggingFace
+description: We have partnered with HuggingFace Transformers library to accelerate DL models on CPU hardware.
 img: 
 importance: 2
 category: "@Intel"

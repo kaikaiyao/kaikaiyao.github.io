@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Neural Coder Partners VS Code
-description: One-Click Quantization of Deep Learning Models with the Neural Coder Extension
+title: Neural Coder + VS Code
+description: We developed a plugin of Neural Coder for VS Code software to enhance our customer adoption.
 img: 
 importance: 2
 category: "@Intel"

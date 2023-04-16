@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Neural Coder Partners Alibaba Cloud
-description: Alibaba Cloud and Intel® Neural Compressor Deliver Better Productivity for PyTorch Users
+title: Neural Coder + Alibaba Cloud
+description: We have partnered with Alibaba Cloud for ML to deliver better PyTorch coding productivity.
 img: 
 importance: 2
 category: "@Intel"
