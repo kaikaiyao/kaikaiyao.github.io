@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Neural Coder Partners Alibaba Cloud
-description: Alibaba Cloud and Intel® Neural Compressor Deliver Better Productivity for PyTorch Users
+title: Neural Coder - One-Click Optimize PyTorch Model
+description: One-Click Enabling of Intel Neural Compressor Features in PyTorch Scripts
 img: 
-importance: 2
+importance: 1
 category: "@Intel"
-redirect: https://www.intel.com/content/www/us/en/developer/articles/technical/alibaba-and-intel-neural-compressor-for-pytorch.html
+redirect: https://medium.com/intel-analytics-software/one-click-enable-intel-neural-compressor-features-in-pytorch-scripts-5d4e31f5a22b
 ---
