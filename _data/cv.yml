@@ -47,15 +47,24 @@
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
-
     - title: Research Scientist
       institution: Johns Hopkins Institute for NanoBioTechnology, Baltimore, US
       year: 2017 - 2020
 
-- title: Visiting
+- title: Others
   type: time_table
   contents:
-    - title: Research Scholar
+    - title: Teaching Assistant
+      institution: Johns Hopkins University, Baltimore, US
+      year: 2019 - 2020
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: Visiting Scholar
       institution: University of Notre Dame, South Bend, US
       year: 2016
       # description:
@@ -65,7 +74,7 @@
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
-    - title: Research Scholar
+    - title: Visiting Scholar
       institution: Osaka University, Osaka, JP
       year: 2014 - 2015
       # description:
@@ -77,7 +86,7 @@
   contents:
     - institution: PyTorch, TensorFlow/Keras, Scikit-Learn, Gradio
       year: DL/AI
-    - institution: Python, C++, MATLAB, Bash, Java
+    - institution: Python, C++, MATLAB, Java, Bash
       year: Coding
     - institution: Linux, Cloud Services, Docker, Network, SQL
       year: Infra
