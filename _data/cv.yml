@@ -1,7 +1,7 @@
 - title: Education
   type: time_table
   contents:
-    - title: PhD - Informatics
+    - title: PhD - Cyber Security, Privacy and Trust
       institution: University of Edinburgh, Edinburgh, UK
       year: 2023 - present
       # description:
@@ -27,7 +27,7 @@
 - title: Experience
   type: time_table
   contents:
-    - title: AI Frameworks Engineer, Domain Lead
+    - title: AI Frameworks Engineer (Lead)
       institution: Intel Corp., Shanghai, CN
       year: 2021 - 2023
       # description:
