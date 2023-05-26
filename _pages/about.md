@@ -25,4 +25,4 @@ I obtained my Bachelor’s degree in Theoretical and Applied Mechanics from [Fud
 
 Before joining the University of Edinburgh, I also gained valuable industry experience in AI. I worked as an AI Frameworks Engineer and Domain Lead at [Intel](https://www.intel.com/content/www/us/en/homepage.html), and as an AI Algorithm Engineer at [Huawei](https://www.huawei.com/en/).
 
-I was raised in Shanghai, and I speak Mandarin, Shanghainese, Taiwanese Hokkien, and Cantonese. I also speak professional English and Japanese, and a bit of Korean and Italian. I am a professional oboist and a skilled baritone singer. And if you must know, my MBTI is INTJ and my partner is ISFJ.
+I was raised in Shanghai, and I speak Mandarin, Shanghainese, Taiwanese, and Cantonese. I also speak professional English and Japanese, and a bit of Korean and Italian. I am a skilled oboist and a baritone singer. My MBTI is INTJ and my beloved partner is ISFJ.
