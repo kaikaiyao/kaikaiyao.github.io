@@ -24,3 +24,5 @@ My name is Kai Yao, and I am currently pursuing a PhD in the [School of Informat
 I obtained my Bachelor’s degree in Theoretical and Applied Mechanics from [Fudan University](https://www.fudan.edu.cn/en/) and my Master’s degree in Mechanical Engineering from [Johns Hopkins University](https://www.jhu.edu/). I was privileged to explore the depths of Statistics and Machine Learning through both coursework and research.
 
 Before joining the University of Edinburgh, I also gained valuable industry experience in AI. I worked as an AI Frameworks Engineer and Domain Lead at [Intel](https://www.intel.com/content/www/us/en/homepage.html), and as an AI Algorithm Engineer at [Huawei](https://www.huawei.com/en/).
+
+I was raised in Shanghai, and I speak Madarin, Shanghainese, Taiwanese Hokkien, and Cantonese. I also speak professional English and Japanese, and a bit of Korean and Italian. I am a professional oboist and a skilled baritone singer. And if you must know, my MBTI is INTJ and my partner is ISFJ.
