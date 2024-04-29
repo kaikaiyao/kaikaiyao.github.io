@@ -54,9 +54,19 @@
 - title: Short-Terms
   type: time_table
   contents:
-    - title: Teaching Assistant
+    - title: Teaching Assistant (Mathematical Image Analysis)
       institution: Johns Hopkins University, Baltimore, US
       year: 2019 - 2020
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: Teaching Assistant (Privacy and Security with Machine Learning)
+      institution: University of Edinburgh, Edinburgh, UK
+      year: 2023 - 2024
       # description:
       #   - Description 1.
       #   - Description 2.
