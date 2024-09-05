@@ -24,7 +24,7 @@
       #   - Description 1.
       #   - Description 2.
 
-- title: Experience
+- title: Industry
   type: time_table
   contents:
     - title: AI Frameworks Engineer (Tech Lead)
@@ -51,19 +51,9 @@
       institution: Johns Hopkins Institute for NanoBioTechnology, Baltimore, US
       year: 2017 - 2020
 
-- title: Short-Terms
+- title: Teaching
   type: time_table
   contents:
-    - title: Teaching Assistant (Mathematical Image Analysis)
-      institution: Johns Hopkins University, Baltimore, US
-      year: 2019 - 2020
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-      #   - title: Description 3.
-      #     contents:
-      #       - Sub-description 1.
-      #       - Sub-description 2.
     - title: Teaching Assistant (Privacy and Security with Machine Learning)
       institution: University of Edinburgh, Edinburgh, UK
       year: 2023 - 2024
@@ -74,6 +64,19 @@
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
+    - title: Teaching Assistant (Mathematical Image Analysis)
+      institution: Johns Hopkins University, Baltimore, US
+      year: 2019 - 2020
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+
+- title: Visiting
+  type: time_table
     - title: Visiting Scholar
       institution: University of Notre Dame, South Bend, US
       year: 2016
@@ -94,9 +97,9 @@
 - title: Skills
   type: time_table
   contents:
-    - institution: PyTorch, TensorFlow/Keras, Scikit-Learn, Gradio
+    - institution: PyTorch, TensorFlow/Keras, Scikit-Learn, HuggingFace, Gradio
       year: DL/AI
-    - institution: Python, C++, MATLAB, Java, Bash
+    - institution: Python, C++, MATLAB, Java, Shell
       year: Coding
     - institution: Linux, Docker, Network, SQL, Cloud Services
       year: Infra
