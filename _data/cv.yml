@@ -14,15 +14,9 @@
     - title: MSc - Mechanical Engineering
       institution: Johns Hopkins University, Baltimore, US
       year: 2020
-      # description:
-      #   - Description 1.
-      #   - Description 2.
     - title: BSc - Theoretical and Applied Mechanics
       institution: Fudan University, Shanghai, CN
       year: 2017
-      # description:
-      #   - Description 1.
-      #   - Description 2.
 
 - title: Industry Experience
   type: time_table
@@ -30,29 +24,21 @@
     - title: AI Frameworks Engineer (Tech Lead)
       institution: Intel Corp., Shanghai, CN
       year: 2021 - 2023
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-      #   - title: Description 3.
-      #     contents:
-      #       - Sub-description 1.
-      #       - Sub-description 2.
     - title: AI Algorithm Engineer
       institution: Huawei Technologies Co., Ltd., Shanghai, CN
       year: 2020 - 2021
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-      #   - title: Description 3.
-      #     contents:
-      #       - Sub-description 1.
-      #       - Sub-description 2.
 
 - title: Research Experience
   type: time_table
     - title: Research Scientist
       institution: Johns Hopkins Institute for NanoBioTechnology, Baltimore, US
       year: 2017 - 2020
+    - title: Visiting Scholar
+      institution: University of Notre Dame, South Bend, US
+      year: 2016
+    - title: Visiting Scholar
+      institution: Osaka University, Osaka, JP
+      year: 2014 - 2015
 
 - title: Teaching Experience
   type: time_table
@@ -60,42 +46,9 @@
     - title: Teaching Assistant (Privacy and Security with Machine Learning)
       institution: University of Edinburgh, Edinburgh, UK
       year: 2023 - 2024
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-      #   - title: Description 3.
-      #     contents:
-      #       - Sub-description 1.
-      #       - Sub-description 2.
     - title: Teaching Assistant (Mathematical Image Analysis)
       institution: Johns Hopkins University, Baltimore, US
       year: 2019 - 2020
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-      #   - title: Description 3.
-      #     contents:
-      #       - Sub-description 1.
-      #       - Sub-description 2.
-
-- title: Visiting Experience
-  type: time_table
-    - title: Visiting Scholar
-      institution: University of Notre Dame, South Bend, US
-      year: 2016
-      # description:
-      #   - Description 1.
-      #   - Description 2.
-      #   - title: Description 3.
-      #     contents:
-      #       - Sub-description 1.
-      #       - Sub-description 2.
-    - title: Visiting Scholar
-      institution: Osaka University, Osaka, JP
-      year: 2014 - 2015
-      # description:
-      #   - Description 1.
-      #   - Description 2.
 
 - title: Skills
   type: time_table
