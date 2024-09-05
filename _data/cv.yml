@@ -24,7 +24,7 @@
       #   - Description 1.
       #   - Description 2.
 
-- title: Industry
+- title: Industry Experience
   type: time_table
   contents:
     - title: AI Frameworks Engineer (Tech Lead)
@@ -47,11 +47,14 @@
       #     contents:
       #       - Sub-description 1.
       #       - Sub-description 2.
+
+- title: Research Experience
+  type: time_table
     - title: Research Scientist
       institution: Johns Hopkins Institute for NanoBioTechnology, Baltimore, US
       year: 2017 - 2020
 
-- title: Teaching
+- title: Teaching Experience
   type: time_table
   contents:
     - title: Teaching Assistant (Privacy and Security with Machine Learning)
@@ -75,7 +78,7 @@
       #       - Sub-description 1.
       #       - Sub-description 2.
 
-- title: Visiting
+- title: Visiting Experience
   type: time_table
     - title: Visiting Scholar
       institution: University of Notre Dame, South Bend, US
