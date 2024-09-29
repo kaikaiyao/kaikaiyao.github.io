@@ -1,0 +1,12 @@
+---
+layout: about
+title: Life
+permalink: /life/
+subtitle: Life beyond work~
+
+news: false  # includes a list of news items
+latest_posts: false  # includes a list of the newest posts
+selected_papers: false # includes a list of papers marked as "selected={true}"
+social: false  # includes social icons at the bottom of the page
+
+Classical music (and, music in general) has been a big part of my life from very young age. I started learning the piano at the age of 3 and began studying woodwinds at 9, specializing in the oboe. At 15, I earned the 'Shanghai Musicians Association Oboe Performance Level' certificate (equivalent to the ABRSM Diploma Grade). I won first place in the youth oboe category at the 'Shanghai Voice' International Music Festival and have served as principal oboist for various ensembles, including the Shanghai Nanyang Model High School Symphony Orchestra (one of the top youth orchestras in China), the Shanghai Student Symphony Orchestra, and the Fudan University Symphony Orchestra.
