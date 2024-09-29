@@ -1,6 +1,8 @@
 ---
 layout: about
 title: Life
+nav: true
+nav_order: 3
 permalink: /life/
 subtitle: Life beyond work~
 
