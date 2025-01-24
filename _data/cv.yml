@@ -1,0 +1,65 @@
+- title: Education
+  type: time_table
+  contents:
+    - title: PhD - Cyber Security, Privacy and Trust
+      institution: University of Edinburgh, Edinburgh, UK
+      year: 2023 - present
+      # description:
+      #   - Description 1.
+      #   - Description 2.
+      #   - title: Description 3.
+      #     contents:
+      #       - Sub-description 1.
+      #       - Sub-description 2.
+    - title: MSc - Mechanical Engineering
+      institution: Johns Hopkins University, Baltimore, US
+      year: 2020
+    - title: BSc - Theoretical and Applied Mechanics
+      institution: Fudan University, Shanghai, CN
+      year: 2017
+
+- title: Industry Experience
+  type: time_table
+  contents:
+    - title: AI Frameworks Engineer
+      institution: Intel Corp., Shanghai, CN
+      year: 2021 - 2023
+    - title: AI Algorithm Engineer
+      institution: Huawei Technologies Co., Ltd., Shanghai, CN
+      year: 2020 - 2021
+
+- title: Research Experience
+  type: time_table
+  contents:
+    - title: Research Scientist
+      institution: School of Informatics, University of Edinburgh, Edinburgh, UK
+      year: 2023 - present
+    - title: Research Scientist
+      institution: Institute for NanoBioTechnology, Johns Hopkins University, Baltimore, US
+      year: 2017 - 2020
+    - title: Visiting Scholar (Short-Term)
+      institution: University of Notre Dame, South Bend, US
+      year: 2016
+    - title: Visiting Scholar (Short-Term)
+      institution: Osaka University, Osaka, JP
+      year: 2014 - 2015
+
+- title: Teaching Experience
+  type: time_table
+  contents:
+    - title: Teaching Assistant (Privacy and Security with Machine Learning)
+      institution: University of Edinburgh, Edinburgh, UK
+      year: 2023 - 2024
+    - title: Teaching Assistant (Mathematical Image Analysis)
+      institution: Johns Hopkins University, Baltimore, US
+      year: 2019 - 2020
+
+- title: Skills
+  type: time_table
+  contents:
+    - institution: PyTorch, TensorFlow/Keras, Scikit-Learn, HuggingFace, Gradio
+      year: DL/AI
+    - institution: Python, C++, MATLAB, Java, Shell
+      year: Coding
+    - institution: Linux, Docker, Network, SQL, Cloud Services
+      year: Infra
