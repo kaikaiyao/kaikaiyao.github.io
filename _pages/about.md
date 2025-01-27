@@ -26,6 +26,6 @@ I obtained my Bachelor’s degree in Theoretical and Applied Mechanics from [Fud
 Before joining the University of Edinburgh, I also gained many years of valuable industry experience in AI. I worked as an AI Frameworks Engineer and Domain Lead at [Intel](https://www.intel.com/content/www/us/en/homepage.html), and as an AI Algorithm Engineer at [Huawei](https://www.huawei.com/en/). I specialized in model acceleration and DL frameworks optimization, emphasizing mixed precision and model quantization techniques.
 
 ### News
-- Our paper *SoK: What Makes Private Learning Unfair?* has been accepted at the [3rd conference of IEEE Secure and Trustworthy ML (SaTML'25)](https://satml.org/accepted-papers/)!
+- Our paper *SoK: What Makes Private Learning Unfair?* has been accepted at the [3rd conference of IEEE Secure and Trustworthy ML (SaTML'25)](https://satml.org/accepted-papers/)! The preprint version is available on [arXiv here](https://arxiv.org/abs/2501.14414).
 
 ---
