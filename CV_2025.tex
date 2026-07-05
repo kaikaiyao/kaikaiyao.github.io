@@ -1,0 +1,147 @@
+\documentclass[10pt]{article}
+\usepackage[a4paper,margin=1.35cm]{geometry}
+\usepackage{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=2pt, parsep=0pt}
+\titlespacing*{\section}{0pt}{7pt}{4pt}
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+\sloppy
+
+\newcommand{\cventry}[4]{
+    \begin{tabularx}{\textwidth}{@{}Xr@{}}
+        \textbf{#1} & #2 \\
+        #3 & #4 \\
+    \end{tabularx}
+}
+
+\newcommand{\cvrole}[3]{
+    \begin{tabularx}{\textwidth}{@{}Xr@{}}
+        \textbf{#1} & #2 \\
+        #3 & \\
+    \end{tabularx}
+}
+
+\begin{document}
+\small
+
+\begin{center}
+    {\LARGE \textbf{Kai Yao}} \\
+    \vspace{2pt}
+    PhD Candidate in Cyber Security, Privacy and Trust \\
+    School of Informatics, University of Edinburgh \\
+    \vspace{2pt}
+    Informatics Forum, 10 Crichton Street, EH8 9AB, Edinburgh, UK \\
+    \href{mailto:kai.yao@ed.ac.uk}{kai.yao@ed.ac.uk} \;|\; \href{https://kaikaiyao.github.io}{kaikaiyao.github.io}
+\end{center}
+
+\section*{Professional Profile}
+\begin{itemize}
+    \item Researcher in secure and trustworthy machine learning, with interests in generative AI security, AI provenance, adversarial robustness, differential privacy, and fairness.
+    \item Current work focuses on robust model attribution and provenance for AI-generated images, with broader interests in trustworthy deployment, digital forensics, and verification of generative models.
+    \item Prior interdisciplinary research experience spans AI for science applications in biology, mechanical engineering, and socially relevant data-driven problems, alongside industry experience at Intel and Huawei.
+\end{itemize}
+
+\section*{Research Interests}
+AI security; secure and trustworthy machine learning; generative AI provenance; model attribution and fingerprinting; adversarial robustness; differential privacy and fairness; computer vision; AI for science.
+
+\section*{Education}
+\cventry{University of Edinburgh}{Edinburgh, UK}{PhD in Cyber Security, Privacy and Trust}{2023 -- Present}
+Research focus: Secure and Trustworthy Machine Learning; Advisor: Dr. Marc Juarez; expected graduation: Nov 2026.
+
+\vspace{2pt}
+\cventry{Johns Hopkins University}{Baltimore, MD, USA}{MS in Mechanical Engineering}{2020}
+
+\vspace{2pt}
+\cventry{Fudan University}{Shanghai, China}{BS in Theoretical Mechanics}{2017}
+
+\section*{Selected Publications}
+\begin{itemize}
+    \item \textbf{Yao K}, Juarez M. \textit{Smudged Fingerprints: A Systematic Evaluation of the Robustness of AI Image Fingerprints}. To appear in the 4th IEEE Secure and Trustworthy Machine Learning Conference, 2026 (accepted).
+    \item \textbf{Yao K}, Juarez M. \textit{SPRINT: Robust Model Attribution of Generated Images via Secret Pixel Reconstruction}. arXiv preprint, 2026.
+    \item \textbf{Yao K}, Juarez M. \textit{SoK: What Makes Private Learning Unfair?} Proceedings of the 3rd IEEE Secure and Trustworthy Machine Learning Conference, 2025.
+    \item Rochman ND\textsuperscript{*}, \textbf{Yao K}\textsuperscript{*}, Gonzalez NA\textsuperscript{*}, Wirtz D, Sun SX. \textit{Single-Cell Volume Measurement Utilizing the Fluorescence Exclusion Method (FXm).} Bio-protocol. 2020;10(12):e3652.
+    \item \textbf{Yao K}\textsuperscript{*}, Rochman ND\textsuperscript{*}, Sun SX. \textit{CTRL: A Label-Free Artificial Intelligence Method for Dynamic Measurement of Single-Cell Volume.} Journal of Cell Science. 2020;133(7):jcs245050.
+    \item Perez-Gonzalez NA\textsuperscript{*}, Rochman ND\textsuperscript{*}, \textbf{Yao K}\textsuperscript{*}, Tao J, Le MT, Flanary S, Sablich L, Toler B, Crentsil E, Takaesu F, Lambrus B. \textit{YAP and TAZ Regulate Cell Volume.} Journal of Cell Biology. 2019;218(10):3472--3488.
+    \item \textbf{Yao K}\textsuperscript{*}, Rochman ND\textsuperscript{*}, Sun SX. \textit{Cell Type Classification and Unsupervised Morphological Phenotyping from Low-Resolution Images Using Deep Learning.} Scientific Reports. 2019;9(1):1--13.
+    \item Zhang Q, Meng Z, Zhang Y, \textbf{Yao K}, Liu J, Zhang Y, Jing L, Yang X, Paliwal N, Meng H, Wang S. \textit{Phantom-Based Experimental Validation of Fast Virtual Deployment of Self-Expandable Stents for Cerebral Aneurysms.} BioMedical Engineering OnLine. 2016;15(2):431--437.
+\end{itemize}
+\textit{Note: \textsuperscript{*} denotes equal contribution / co-first authorship.}
+
+\section*{Research Experience}
+\cvrole{Smudged Fingerprints: Robustness of AI Image Fingerprinting}{2024 -- 2025}{University of Edinburgh}
+\begin{itemize}
+    \item Conducted the first systematic security evaluation of model fingerprint detection for generative image attribution, formalizing white-box and black-box threat models and implementing five removal and forgery attack strategies across RGB, frequency, and learned-feature domains on 12 state-of-the-art GAN, VAE, and diffusion models.
+    \item Identified severe robustness gaps, utility-robustness trade-offs, and fundamental limitations of passive fingerprinting for adversarial provenance.
+\end{itemize}
+
+\cvrole{Fingerprinting Generative Models Against Malicious Providers}{2024 -- 2025}{University of Edinburgh}
+\begin{itemize}
+    \item Developed robust fingerprint extraction methods for GANs and diffusion models under threat models where the provider itself may be adversarial.
+    \item Built a comprehensive evaluation framework across models and attack scenarios, supporting research on AI security and model provenance.
+\end{itemize}
+
+\newpage
+\cvrole{Differential Privacy's Disparate Impact in Machine Learning}{2023 -- 2024}{University of Edinburgh}
+\begin{itemize}
+    \item Conducted a systematic fairness analysis of differentially private machine learning, developing a taxonomy of disparity-inducing factors across privacy mechanisms, model architectures, and data distributions.
+    \item Used causal and empirical analysis to identify dataset size and group distance to decision boundaries as key drivers of DP-induced unfairness, and evaluated mitigation strategies.
+\end{itemize}
+
+\cvrole{Deep Learning for Single-Cell Morphology and Measurement}{2018 -- 2020}{Johns Hopkins University}
+\begin{itemize}
+    \item Developed label-free deep learning pipelines for high-throughput biological image analysis, including U-Net-based morphology prediction, cell-type classification, automated preprocessing, and unsupervised morphological phenotyping.
+    \item Produced multiple peer-reviewed outputs from interdisciplinary AI research in computational biology and scientific imaging.
+\end{itemize}
+
+\section*{Teaching and Mentoring}
+\cvrole{Privacy and Security with Machine Learning -- Guest Lecturer}{2025 -- 2026}{University of Edinburgh}
+Guest lecture: \textit{Image Provenance in the AI Era}.
+
+\cvrole{Privacy and Security with Machine Learning -- Teaching Assistant and Lab Demonstrator}{2024 -- 2025}{University of Edinburgh}
+\cvrole{Privacy and Security with Machine Learning -- Teaching Assistant and Lab Demonstrator}{2023 -- 2024}{University of Edinburgh}
+\cvrole{Mathematical Image Analysis -- Teaching Assistant}{2019 -- 2020}{Johns Hopkins University}
+
+\vspace{2pt}
+Student mentoring / tutoring: Felipe Takaesu, Eliana Crentsil, Lucia Sablich (Johns Hopkins UG); Shannon Flanary (Johns Hopkins PG); Chunhan Fang (University of Edinburgh PG).
+
+\section*{Industry Experience}
+\cvrole{Senior AI Algorithm Engineer}{2021 -- 2023}{Intel Corp., Shanghai, China}
+\begin{itemize}
+    \item Led development and optimization of Intel AI software stack components, including Neural Coder and Intel Extension for PyTorch, to improve training and inference throughput for PyTorch and TensorFlow workloads on Intel hardware.
+    \item Developed PyTorch adapter algorithms for Intel Neural Compressor to enable INT8 quantization and optimized inference performance for large-scale AIGC models including Stable Diffusion.
+    \item Designed benchmarking frameworks for AI workloads across Intel and competitor platforms, and collaborated with industry partners including Alibaba Cloud and AWS ecosystems.
+\end{itemize}
+
+\cvrole{AI Algorithm Engineer}{2020 -- 2021}{Huawei Technologies Co., Ltd., Shanghai, China}
+\begin{itemize}
+    \item Developed machine learning algorithms for 5G systems, focusing on MU-MIMO features using CNN and RNN architectures.
+    \item Performed model optimization and weight compression to improve training and inference efficiency, and supported deployment and validation workflows.
+\end{itemize}
+
+\section*{Awards, Fellowships, and Funding}
+\begin{itemize}
+    \item Conference Attendance Grant, IEEE SaTML Conference, IEEE, 2024 and 2025
+    \item School of Informatics PhD Full Scholarship, University of Edinburgh, 2023
+    \item Division Achievement Award, Fast Stable Diffusion on Intel CPU, Intel AIA, 2023
+    \item Division Recognition Award, Neural Coder Partnering Alibaba Cloud, Intel CESG SW AI, 2023
+    \item Division Achievement Award, Innovation of Neural Coder, Intel AIA, 2022
+    \item Departmental Research Fellowship, Johns Hopkins University, 2017
+    \item Outstanding Graduate of the Year 2017, Fudan University, 2017
+    \item JASSO Full Scholarship for Exchange Students, Japanese Government, 2014
+\end{itemize}
+
+\end{document}
