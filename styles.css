@@ -387,22 +387,18 @@ button:focus-visible {
 
 .section {
   min-width: 0;
-  padding: 14px 0 15px;
+  padding: 12px 0 13px;
   scroll-margin-top: 64px;
-}
-
-.section + .section {
-  border-top: 1px solid var(--border);
 }
 
 .section h2 {
   display: flex;
   align-items: center;
   gap: 10px;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   color: var(--accent-strong);
   font-family: var(--font-display);
-  font-size: 1.16rem;
+  font-size: 1.07rem;
   font-weight: 600;
   letter-spacing: -0.01em;
   line-height: 1.1;
@@ -422,8 +418,8 @@ button:focus-visible {
 .lede {
   margin: 0 0 12px;
   color: var(--text);
-  font-size: 0.94rem;
-  line-height: 1.64;
+  font-size: 0.87rem;
+  line-height: 1.6;
   text-align: left;
 }
 
@@ -437,9 +433,9 @@ button:focus-visible {
 .section-teaching .teaching-item > :last-child,
 .section-reviewing .review-item > :last-child {
   font-family: var(--font-body);
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   letter-spacing: 0;
-  line-height: 1.56;
+  line-height: 1.52;
 }
 
 .research-tags {
@@ -455,13 +451,13 @@ button:focus-visible {
 .research-tags li {
   display: inline-flex;
   align-items: center;
-  padding: 5px 9px;
+  padding: 4px 8px;
   border: 1px solid #b8c8dc;
   border-radius: 5px;
   background: #edf3fb;
   box-shadow: 0 1px 2px rgba(23, 59, 102, 0.045);
   color: #173b66;
-  font-size: 0.72rem;
+  font-size: 0.69rem;
   font-weight: 700;
   letter-spacing: 0.005em;
   line-height: 1.15;
@@ -482,7 +478,7 @@ button:focus-visible {
 .teaching-item,
 .review-item,
 .pub-item {
-  padding: 4px 0;
+  padding: 3px 0;
 }
 
 .news-item:first-child,
@@ -516,7 +512,7 @@ button:focus-visible {
 .news-date {
   padding-top: 2px;
   color: var(--accent);
-  font-size: 0.68rem;
+  font-size: 0.64rem;
   font-weight: 750;
   letter-spacing: 0.1em;
   line-height: 1.42;
@@ -535,7 +531,7 @@ button:focus-visible {
   padding: 2px 0;
   cursor: pointer;
   color: var(--accent);
-  font-size: 0.76rem;
+  font-size: 0.71rem;
   font-weight: 650;
 }
 
@@ -592,7 +588,7 @@ button:focus-visible {
   background: #244f7f;
   box-shadow: 0 1px 3px rgba(18, 59, 119, 0.14);
   color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 0.67rem;
   letter-spacing: 0.015em;
 }
 
@@ -911,19 +907,19 @@ button:focus-visible {
   }
 
   .section {
-    padding: 13px 0 14px;
+    padding: 12px 0 13px;
     scroll-margin-top: 58px;
   }
 
   .section h2 {
     gap: 8px;
     margin-bottom: 9px;
-    font-size: 1.1rem;
+    font-size: 1.04rem;
   }
 
   .lede {
-    font-size: 0.92rem;
-    line-height: 1.6;
+    font-size: 0.87rem;
+    line-height: 1.58;
   }
 
   .news-item,
