@@ -1,147 +1,265 @@
-\documentclass[10pt]{article}
-\usepackage[a4paper,margin=1.35cm]{geometry}
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,margin=1.40cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
 \usepackage{hyperref}
 \usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{tabularx}
 \usepackage{array}
+\usepackage{needspace}
 
-\pagenumbering{gobble}
+\definecolor{accent}{HTML}{004B7A}
+\definecolor{darkgray}{HTML}{222222}
+
+\pagestyle{empty}
 \setlength{\parindent}{0pt}
-\setlength{\parskip}{0pt}
-\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=2pt, parsep=0pt}
-\titlespacing*{\section}{0pt}{7pt}{4pt}
-\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\setlength{\parskip}{1pt}
+\renewcommand{\arraystretch}{1.04}
+\raggedbottom
+\emergencystretch=2.5em
+
 \hypersetup{
     colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,
-    urlcolor=cyan,
-}
-\sloppy
-
-\newcommand{\cventry}[4]{
-    \begin{tabularx}{\textwidth}{@{}Xr@{}}
-        \textbf{#1} & #2 \\
-        #3 & #4 \\
-    \end{tabularx}
+    urlcolor=accent,
+    linkcolor=accent,
+    citecolor=accent,
+    pdfauthor={Kai Yao},
+    pdftitle={Kai Yao - Curriculum Vitae},
+    pageanchor=false
 }
 
-\newcommand{\cvrole}[3]{
-    \begin{tabularx}{\textwidth}{@{}Xr@{}}
-        \textbf{#1} & #2 \\
-        #3 & \\
-    \end{tabularx}
+\titleformat{\section}[block]
+  {\large\bfseries\color{accent}}
+  {}{0em}{}
+  [\vspace{0.15em}{\color{accent}\titlerule[0.45pt]}]
+\titlespacing*{\section}{0pt}{0.55em}{0.28em}
+
+\setlist[itemize]{leftmargin=*, topsep=0.8pt, itemsep=0.75pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize,2]{leftmargin=1.25em, topsep=0.5pt, itemsep=0.5pt}
+
+\newcommand{\CandidateName}{Kai Yao}
+\newcommand{\PrimaryEmail}{kai.yao@ed.ac.uk}
+\newcommand{\SecondaryEmail}{kaiyao17@gmail.com}
+\newcommand{\ChinaPhone}{+86 17302151562}
+\newcommand{\UKPhone}{+44 7867 763608}
+\newcommand{\PersonalPageURL}{https://kaikaiyao.github.io}
+\newcommand{\PersonalPageText}{kaikaiyao.github.io}
+\newcommand{\LinkedInURL}{https://www.linkedin.com/in/kai-yao-ai-algorithm/}
+\newcommand{\LinkedInText}{linkedin.com/in/kai-yao-ai-algorithm}
+\newcommand{\ExpectedGraduation}{Oct 2026}
+
+\newcommand{\entry}[4]{%
+    \item \textbf{#1} \hfill #4\\
+    \textit{#2} \hfill #3
+}
+
+\newcommand{\projectentry}[4]{%
+    \Needspace{4\baselineskip}%
+    \item \textbf{#1} \hfill #4\\
+    \textit{#2} \hfill #3
 }
 
 \begin{document}
-\small
+\fontsize{9.25}{10.35}\selectfont
+\vspace*{-0.62cm}
 
 \begin{center}
-    {\LARGE \textbf{Kai Yao}} \\
-    \vspace{2pt}
-    PhD Candidate in Cyber Security, Privacy and Trust \\
-    School of Informatics, University of Edinburgh \\
-    \vspace{2pt}
-    Informatics Forum, 10 Crichton Street, EH8 9AB, Edinburgh, UK \\
-    \href{mailto:kai.yao@ed.ac.uk}{kai.yao@ed.ac.uk} \;|\; \href{https://kaikaiyao.github.io}{kaikaiyao.github.io}
+    {\huge \bfseries \CandidateName}\\[5pt]
+    {\normalsize Trustworthy and Secure AI}\\[1pt]
+    PhD Candidate, School of Informatics, University of Edinburgh, UK\\[1pt]
+    \textbf{Expected PhD Completion: \ExpectedGraduation}\\[2pt]
+    \small
+    \href{mailto:\PrimaryEmail}{\PrimaryEmail} \;|\;
+    \href{mailto:\SecondaryEmail}{\SecondaryEmail} \;|\;
+    \ChinaPhone{} \;|\; \UKPhone{}\\[-1pt]
+    \href{\PersonalPageURL}{\PersonalPageText} \;|\;
+    \href{\LinkedInURL}{\LinkedInText}
 \end{center}
 
-\section*{Professional Profile}
-\begin{itemize}
-    \item Researcher in secure and trustworthy machine learning, with interests in generative AI security, AI provenance, adversarial robustness, differential privacy, and fairness.
-    \item Current work focuses on robust model attribution and provenance for AI-generated images, with broader interests in trustworthy deployment, digital forensics, and verification of generative models.
-    \item Prior interdisciplinary research experience spans AI for science applications in biology, mechanical engineering, and socially relevant data-driven problems, alongside industry experience at Intel and Huawei.
-\end{itemize}
+\vspace{-0.55em}
 
-\section*{Research Interests}
-AI security; secure and trustworthy machine learning; generative AI provenance; model attribution and fingerprinting; adversarial robustness; differential privacy and fairness; computer vision; AI for science.
+\section*{Profile}
+PhD candidate in Cyber Security, Privacy and Trust at the University of Edinburgh, specializing in secure and trustworthy machine learning, generative-image provenance, model attribution, adversarial robustness, privacy, and fairness. My research combines empirical evaluation, threat modelling, statistical measurement, and ML systems engineering. Previously, I worked as an AI algorithm engineer at Intel and Huawei, developing AI software components, optimization workflows, and performance benchmarks for production ML systems. My earlier work includes peer-reviewed research in computer vision for scientific and biomedical imaging at Johns Hopkins University.
+
+\section*{Research Areas}
+AI security and trustworthy ML; generated-image provenance and model attribution; AI fingerprinting and watermarking; adversarial robustness; privacy and fairness measurement; computer vision for scientific imaging; ML systems, quantization, and performance evaluation.
 
 \section*{Education}
-\cventry{University of Edinburgh}{Edinburgh, UK}{PhD in Cyber Security, Privacy and Trust}{2023 -- Present}
-Research focus: Secure and Trustworthy Machine Learning; Advisor: Dr. Marc Juarez; expected graduation: Nov 2026.
-
-\vspace{2pt}
-\cventry{Johns Hopkins University}{Baltimore, MD, USA}{MS in Mechanical Engineering}{2020}
-
-\vspace{2pt}
-\cventry{Fudan University}{Shanghai, China}{BS in Theoretical Mechanics}{2017}
-
-\section*{Selected Publications}
 \begin{itemize}
-    \item \textbf{Yao K}, Juarez M. \textit{Smudged Fingerprints: A Systematic Evaluation of the Robustness of AI Image Fingerprints}. To appear in the 4th IEEE Secure and Trustworthy Machine Learning Conference, 2026 (accepted).
-    \item \textbf{Yao K}, Juarez M. \textit{SPRINT: Robust Model Attribution of Generated Images via Secret Pixel Reconstruction}. arXiv preprint, 2026.
-    \item \textbf{Yao K}, Juarez M. \textit{SoK: What Makes Private Learning Unfair?} Proceedings of the 3rd IEEE Secure and Trustworthy Machine Learning Conference, 2025.
-    \item Rochman ND\textsuperscript{*}, \textbf{Yao K}\textsuperscript{*}, Gonzalez NA\textsuperscript{*}, Wirtz D, Sun SX. \textit{Single-Cell Volume Measurement Utilizing the Fluorescence Exclusion Method (FXm).} Bio-protocol. 2020;10(12):e3652.
-    \item \textbf{Yao K}\textsuperscript{*}, Rochman ND\textsuperscript{*}, Sun SX. \textit{CTRL: A Label-Free Artificial Intelligence Method for Dynamic Measurement of Single-Cell Volume.} Journal of Cell Science. 2020;133(7):jcs245050.
-    \item Perez-Gonzalez NA\textsuperscript{*}, Rochman ND\textsuperscript{*}, \textbf{Yao K}\textsuperscript{*}, Tao J, Le MT, Flanary S, Sablich L, Toler B, Crentsil E, Takaesu F, Lambrus B. \textit{YAP and TAZ Regulate Cell Volume.} Journal of Cell Biology. 2019;218(10):3472--3488.
-    \item \textbf{Yao K}\textsuperscript{*}, Rochman ND\textsuperscript{*}, Sun SX. \textit{Cell Type Classification and Unsupervised Morphological Phenotyping from Low-Resolution Images Using Deep Learning.} Scientific Reports. 2019;9(1):1--13.
-    \item Zhang Q, Meng Z, Zhang Y, \textbf{Yao K}, Liu J, Zhang Y, Jing L, Yang X, Paliwal N, Meng H, Wang S. \textit{Phantom-Based Experimental Validation of Fast Virtual Deployment of Self-Expandable Stents for Cerebral Aneurysms.} BioMedical Engineering OnLine. 2016;15(2):431--437.
+    \entry{University of Edinburgh}{PhD in Cyber Security, Privacy and Trust}{Edinburgh, UK}{2023 -- \ExpectedGraduation{} expected}
+    \begin{itemize}
+        \item Advisor: Dr. Marc Juarez. Research focus: secure and trustworthy ML, generative-model provenance, AI image fingerprinting, adversarial robustness, privacy, and fairness.
+        \item Funded by a full PhD scholarship from the University of Edinburgh.
+    \end{itemize}
+    \entry{Johns Hopkins University}{MS in Mechanical Engineering}{Baltimore, MD, USA}{2020}
+    \begin{itemize}
+        \item Research focus: computer vision, quantitative microscopy, single-cell imaging, and deep learning for scientific measurement.
+    \end{itemize}
+    \entry{Fudan University}{BS in Theoretical and Applied Mechanics}{Shanghai, China}{2017}
+    \entry{Osaka University}{One-year undergraduate exchange student}{Osaka, Japan}{2014 -- 2015}
+\end{itemize}
+
+\section*{Research Experience}
+\begin{itemize}
+\projectentry{Generative AI Provenance, Model Attribution, and Post-Deployment Auditing}{University of Edinburgh}{Edinburgh, UK}{2024 -- 2026}
+    \begin{itemize}
+        \item Developed methods and evaluation protocols for attributing generated images to source models, auditing model changes after certification, and assessing provenance reliability under adversarial manipulation.
+        \item \textbf{SPRINT:} designed a keyed passive-attribution method that uses verifier-held secret pixel-reconstruction targets. The method trains source-specific reconstructors from black-box generator outputs, keeps the verification task private from adaptive attackers, and reduces adaptive removal and forgery success while maintaining high clean attribution accuracy.
+        \item \textbf{FARE:} developed an output-only auditing method for detecting bait-and-switch image generators after certification. The method learns a forensic acceptance region from the certified generator and flags model-version, checkpoint, and inference-pipeline changes from generated outputs.
+        \item Built reproducible pipelines for generator sampling, source-specific training, attack simulation, fixed-FPR thresholding, AUROC/TPR/FPR analysis, prevalence-aware precision-recall analysis, and ablation studies.
+        \item Analyzed deployment implications for digital forensics, provider accountability, regulatory compliance, intellectual-property protection, and content authenticity.
+    \end{itemize}
+
+\projectentry{Smudged Fingerprints: Robustness of AI Image Fingerprinting}{University of Edinburgh}{Edinburgh, UK}{2024 -- 2025}
+    \begin{itemize}
+        \item Conducted a systematic security evaluation of AI image fingerprinting methods for generated-image attribution under adaptive manipulation.
+        \item Formalized white-box and black-box threat models for two attack goals: fingerprint removal, which erases identifying traces to evade attribution, and fingerprint forgery, which induces misattribution to a target model.
+        \item Implemented five removal and forgery attack strategies and benchmarked 14 representative fingerprinting methods across RGB, frequency, and learned-feature domains on 12 state-of-the-art GAN, VAE, and diffusion generators.
+        \item Measured clean and attacked performance, documented utility-robustness trade-offs, and identified evaluation assumptions that can overstate forensic reliability under adaptive attacks.
+    \end{itemize}
+
+\projectentry{Differential Privacy's Disparate Impact in Machine Learning}{University of Edinburgh}{Edinburgh, UK}{2023 -- 2024}
+    \begin{itemize}
+        \item Studied how differentially private training changes group-level error allocation across privacy mechanisms, model architectures, and data distributions.
+        \item Developed a taxonomy of disparity-inducing factors and identified dataset size, group imbalance, and group distance to decision boundaries as drivers of DP-induced unfairness.
+        \item Analyzed privacy-induced fairness degradation as a measurement problem, separating average utility loss from subgroup-specific harms and identifying when private learning changes the allocation of errors.
+    \end{itemize}
+
+\projectentry{Deep Learning for Single-Cell Imaging and Quantitative Biology}{Johns Hopkins University}{Baltimore, MD, USA}{2018 -- 2020}
+    \begin{itemize}
+        \item Developed label-free deep learning algorithms for microscopy-image cell classification, single-cell volume prediction, and morphology-driven phenotyping.
+        \item Built experimental and computational pipelines spanning microfluidic fluorescence-exclusion measurement, DIC microscopy, image preprocessing, U-Net/CNN model training, and validation against biological measurements.
+        \item Co-first author on studies in \textit{Journal of Cell Science}, \textit{Scientific Reports}, and \textit{Bio-protocol} that developed computer-vision tools for quantitative biology.
+    \end{itemize}
+
+\projectentry{Computational Modelling for Biomedical Mechanics}{Fudan University and collaborators}{Shanghai, China}{2015 -- 2017}
+    \begin{itemize}
+        \item Contributed to phantom-based experimental validation of fast virtual deployment of self-expandable stents for cerebral aneurysm applications.
+        \item Applied mechanics, modelling, and validation methods to biomedical-engineering problems at the interface of computation and experimental measurement.
+    \end{itemize}
+\end{itemize}
+
+\section*{Industry Experience}
+\begin{itemize}
+    \entry{Senior AI Algorithm Engineer}{Intel Corp.}{Shanghai, China}{2021 -- 2023}
+    \begin{itemize}
+        \item Developed and optimized Intel AI software components, including Neural Coder, Intel Extension for PyTorch, and Intel Neural Compressor, to improve PyTorch and TensorFlow training/inference performance on Intel hardware.
+        \item Developed PyTorch adapter and model-optimization workflows for Intel Neural Compressor, supporting INT8 quantization and accelerated inference for large generative-AI workloads, including Stable Diffusion.
+        \item Designed and maintained benchmarking frameworks to compare AI workload performance across Intel and non-Intel platforms, diagnose bottlenecks, and guide software optimization priorities.
+        \item Collaborated with partner teams including Alibaba Cloud and AWS to integrate Intel AI optimizations into production environments and translate benchmark results into engineering recommendations.
+        \item Received Intel division awards for Fast Stable Diffusion on Intel CPU, Neural Coder innovation, and Neural Coder collaboration with Alibaba Cloud.
+    \end{itemize}
+
+    \entry{AI Algorithm Engineer}{Huawei Technologies Co., Ltd.}{Shanghai, China}{2020 -- 2021}
+    \begin{itemize}
+        \item Developed ML algorithms for 5G MU-MIMO systems using CNN and RNN models under practical deployment constraints.
+        \item Optimized model architectures and compressed model weights to improve training and inference efficiency, working with deployment and validation teams.
+    \end{itemize}
+\end{itemize}
+
+\section*{Publications and Manuscripts}
+\textbf{Peer-Reviewed Publications in AI and Machine Learning}
+\begin{itemize}
+    \item \textbf{Yao K}, Juarez M. \textit{Smudged Fingerprints: A Systematic Evaluation of the Robustness of AI Image Fingerprints.} To appear in the 4th IEEE Conference on Secure and Trustworthy Machine Learning (SaTML), 2026.
+    \item \textbf{Yao K}, Juarez M. \textit{SoK: What Makes Private Learning Unfair?} Proceedings of the 3rd IEEE Conference on Secure and Trustworthy Machine Learning (SaTML), 2025.
+\end{itemize}
+
+\enlargethispage{1.2\baselineskip}
+\Needspace{5\baselineskip}
+\textbf{Peer-Reviewed Publications in AI for Science and Biomedical Engineering}
+\begin{itemize}
+    \item Rochman ND\textsuperscript{*}, \textbf{Yao K}\textsuperscript{*}, Gonzalez NA\textsuperscript{*}, Wirtz D, Sun SX. \textit{Single-Cell Volume Measurement Utilizing the Fluorescence Exclusion Method (FXm).} \textit{Bio-protocol}. 2020;10(12):e3652.
+    \item \textbf{Yao K}\textsuperscript{*}, Rochman ND\textsuperscript{*}, Sun SX. \textit{CTRL: A Label-Free Artificial Intelligence Method for Dynamic Measurement of Single-Cell Volume.} \textit{Journal of Cell Science}. 2020;133(7):jcs245050.
+    \item Perez-Gonzalez NA\textsuperscript{*}, Rochman ND\textsuperscript{*}, \textbf{Yao K}\textsuperscript{*}, Tao J, Le MT, Flanary S, Sablich L, Toler B, Crentsil E, Takaesu F, Lambrus B. \textit{YAP and TAZ Regulate Cell Volume.} \textit{Journal of Cell Biology}. 2019;218(10):3472--3488.
+    \item \textbf{Yao K}\textsuperscript{*}, Rochman ND\textsuperscript{*}, Sun SX. \textit{Cell Type Classification and Unsupervised Morphological Phenotyping from Low-Resolution Images Using Deep Learning.} \textit{Scientific Reports}. 2019;9(1):1--13.
+    \item Zhang Q, Meng Z, Zhang Y, \textbf{Yao K}, Liu J, Zhang Y, Jing L, Yang X, Paliwal N, Meng H, Wang S. \textit{Phantom-Based Experimental Validation of Fast Virtual Deployment of Self-Expandable Stents for Cerebral Aneurysms.} \textit{BioMedical Engineering OnLine}. 2016;15(2):431--437.
 \end{itemize}
 \textit{Note: \textsuperscript{*} denotes equal contribution / co-first authorship.}
 
-\section*{Research Experience}
-\cvrole{Smudged Fingerprints: Robustness of AI Image Fingerprinting}{2024 -- 2025}{University of Edinburgh}
+\Needspace{5\baselineskip}
+\textbf{Preprints and Manuscripts Under Review}
 \begin{itemize}
-    \item Conducted the first systematic security evaluation of model fingerprint detection for generative image attribution, formalizing white-box and black-box threat models and implementing five removal and forgery attack strategies across RGB, frequency, and learned-feature domains on 12 state-of-the-art GAN, VAE, and diffusion models.
-    \item Identified severe robustness gaps, utility-robustness trade-offs, and fundamental limitations of passive fingerprinting for adversarial provenance.
+    \item \textbf{Yao K}, Juarez M. \textit{SPRINT: Robust Model Attribution of Generated Images via Secret Pixel Reconstruction.} arXiv:2508.05691, 2026.
 \end{itemize}
 
-\cvrole{Fingerprinting Generative Models Against Malicious Providers}{2024 -- 2025}{University of Edinburgh}
+\section*{Selected Talks, Presentations, and Media Coverage}
 \begin{itemize}
-    \item Developed robust fingerprint extraction methods for GANs and diffusion models under threat models where the provider itself may be adversarial.
-    \item Built a comprehensive evaluation framework across models and attack scenarios, supporting research on AI security and model provenance.
+    \item \textbf{Yao K}. \textit{Smudged Fingerprints: A Systematic Evaluation of the Robustness of AI Image Fingerprints.} Oral presentation, IEEE Conference on Secure and Trustworthy Machine Learning (SaTML) \hfill 2026
+    \item \textbf{Yao K}. \textit{Fingerprinting AI Models in a Black-Box Setting.} Invited keynote, Kraus \& Lederer Law Firm, on AI model fingerprinting and intellectual-property protection \hfill 2026
+    \item \textbf{Yao K}. \textit{Image Provenance in the AI Era.} Guest lecture, graduate course Privacy and Security with Machine Learning, University of Edinburgh \hfill 2026
+    \item \textbf{Yao K}. \textit{SoK: What Makes Private Learning Unfair?} Oral presentation, IEEE Conference on Secure and Trustworthy Machine Learning (SaTML) \hfill 2025
+    \item \textbf{Yao K}. \textit{Algorithmic Unfairness in Private Classifiers.} University of Edinburgh Cyber Security, Privacy, \& Trust Research Showcase \hfill 2024
+    \item \textbf{Media coverage:} University of Edinburgh News, DIGIT, and Herald Scotland \hfill 2026
 \end{itemize}
 
-\newpage
-\cvrole{Differential Privacy's Disparate Impact in Machine Learning}{2023 -- 2024}{University of Edinburgh}
+\section*{Teaching Experience}
 \begin{itemize}
-    \item Conducted a systematic fairness analysis of differentially private machine learning, developing a taxonomy of disparity-inducing factors across privacy mechanisms, model architectures, and data distributions.
-    \item Used causal and empirical analysis to identify dataset size and group distance to decision boundaries as key drivers of DP-induced unfairness, and evaluated mitigation strategies.
+    \item \textbf{Guest Lecturer}, graduate-level Privacy and Security with Machine Learning, University of Edinburgh \hfill 2025 -- 2026
+    \begin{itemize}
+        \item Delivered lecture material on image provenance, AI fingerprinting, privacy, security, and trustworthy ML.
+    \end{itemize}
+    \item \textbf{Teaching Assistant and Lab Demonstrator}, Privacy and Security with Machine Learning, University of Edinburgh \hfill 2023 -- 2025
+    \begin{itemize}
+        \item Supported labs, tutorials, assessment, and student questions on privacy, security, attacks, defences, and evaluation.
+    \end{itemize}
+    \item \textbf{Teaching Assistant}, Mathematical and Computational Image Analysis, Johns Hopkins University \hfill 2019 -- 2020
+    \begin{itemize}
+        \item Assisted instruction in image analysis, mathematical modelling, and algorithmic problem solving.
+    \end{itemize}
 \end{itemize}
 
-\cvrole{Deep Learning for Single-Cell Morphology and Measurement}{2018 -- 2020}{Johns Hopkins University}
+\section*{Mentoring}
 \begin{itemize}
-    \item Developed label-free deep learning pipelines for high-throughput biological image analysis, including U-Net-based morphology prediction, cell-type classification, automated preprocessing, and unsupervised morphological phenotyping.
-    \item Produced multiple peer-reviewed outputs from interdisciplinary AI research in computational biology and scientific imaging.
+    \item Mentored undergraduate and postgraduate students at Johns Hopkins University and the University of Edinburgh.
+    \item Mentees: Felipe Takaesu, Eliana Crentsil, Lucia Sablich, Shannon Flanary, and Chunhan Fang.
 \end{itemize}
 
-\section*{Teaching and Mentoring}
-\cvrole{Privacy and Security with Machine Learning -- Guest Lecturer}{2025 -- 2026}{University of Edinburgh}
-Guest lecture: \textit{Image Provenance in the AI Era}.
-
-\cvrole{Privacy and Security with Machine Learning -- Teaching Assistant and Lab Demonstrator}{2024 -- 2025}{University of Edinburgh}
-\cvrole{Privacy and Security with Machine Learning -- Teaching Assistant and Lab Demonstrator}{2023 -- 2024}{University of Edinburgh}
-\cvrole{Mathematical Image Analysis -- Teaching Assistant}{2019 -- 2020}{Johns Hopkins University}
-
-\vspace{2pt}
-Student mentoring / tutoring: Felipe Takaesu, Eliana Crentsil, Lucia Sablich (Johns Hopkins UG); Shannon Flanary (Johns Hopkins PG); Chunhan Fang (University of Edinburgh PG).
-
-\section*{Industry Experience}
-\cvrole{Senior AI Algorithm Engineer}{2021 -- 2023}{Intel Corp., Shanghai, China}
+\section*{Professional Service}
 \begin{itemize}
-    \item Led development and optimization of Intel AI software stack components, including Neural Coder and Intel Extension for PyTorch, to improve training and inference throughput for PyTorch and TensorFlow workloads on Intel hardware.
-    \item Developed PyTorch adapter algorithms for Intel Neural Compressor to enable INT8 quantization and optimized inference performance for large-scale AIGC models including Stable Diffusion.
-    \item Designed benchmarking frameworks for AI workloads across Intel and competitor platforms, and collaborated with industry partners including Alibaba Cloud and AWS ecosystems.
+    \item Reviewer, ACM Digital Threats: Research and Practice (DTRAP).
+    \item Reviewer, AAAI Conference on Artificial Intelligence (AAAI-26).
+    \item Reviewer, ACM Workshop on Artificial Intelligence and Security (AISec), 2026.
+    \item Reviewer, Privacy Enhancing Technologies Symposium (PETS), 2027.
 \end{itemize}
 
-\cvrole{AI Algorithm Engineer}{2020 -- 2021}{Huawei Technologies Co., Ltd., Shanghai, China}
+\section*{Awards, Fellowships, and Grants}
 \begin{itemize}
-    \item Developed machine learning algorithms for 5G systems, focusing on MU-MIMO features using CNN and RNN architectures.
-    \item Performed model optimization and weight compression to improve training and inference efficiency, and supported deployment and validation workflows.
+    \item IEEE SaTML Conference Attendance Grant \hfill 2024, 2025, 2026
+    \item PhD Full Scholarship, University of Edinburgh \hfill 2023 -- 2026
+    \item Division Achievement Award, Fast Stable Diffusion on Intel CPU, Intel AIA \hfill 2023
+    \item Division Recognition Award, Neural Coder Partnering Alibaba Cloud, Intel CESG SW AI \hfill 2023
+    \item Division Achievement Award, Innovation of Neural Coder, Intel AIA \hfill 2022
+    \item Departmental Research Fellowship, Johns Hopkins University \hfill 2017
+    \item Outstanding Graduate of the Year, Fudan University \hfill 2017
+    \item JASSO Full Scholarship for Exchange Students, Japanese Government \hfill 2014
 \end{itemize}
 
-\section*{Awards, Fellowships, and Funding}
+\section*{Technical Skills}
+\begingroup
+\raggedright
 \begin{itemize}
-    \item Conference Attendance Grant, IEEE SaTML Conference, IEEE, 2024 and 2025
-    \item School of Informatics PhD Full Scholarship, University of Edinburgh, 2023
-    \item Division Achievement Award, Fast Stable Diffusion on Intel CPU, Intel AIA, 2023
-    \item Division Recognition Award, Neural Coder Partnering Alibaba Cloud, Intel CESG SW AI, 2023
-    \item Division Achievement Award, Innovation of Neural Coder, Intel AIA, 2022
-    \item Departmental Research Fellowship, Johns Hopkins University, 2017
-    \item Outstanding Graduate of the Year 2017, Fudan University, 2017
-    \item JASSO Full Scholarship for Exchange Students, Japanese Government, 2014
+    \item \textbf{Programming \& AI tools:} Python, MATLAB, C++, Java, PyTorch, TensorFlow, NumPy/Pandas, Linux/Unix, Git, LaTeX, Codex app.
+    \item \textbf{ML and computer vision:} deep learning, CNNs, U-Net, diffusion models, GANs, VAEs, image forensics, microscopy image analysis, model training and evaluation.
+    \item \textbf{AI security and trust:} model attribution, provenance, fingerprinting, watermarking, adversarial evaluation, threat modelling, privacy and fairness measurement.
+    \item \textbf{ML systems:} Intel Extension for PyTorch, Intel Neural Compressor, Neural Coder, INT8 quantization, model compression, inference optimization, benchmarking.
+    \item \textbf{Research practice:} experimental design, benchmark construction, ablation studies, statistical thresholding, ROC/AUROC/FPR/TPR analysis, reproducibility.
+    \item \textbf{Communication:} academic writing, technical reports, conference presentations, guest lectures, interdisciplinary collaboration, partner-facing communication.
 \end{itemize}
+\endgroup
+
+\section*{Languages and International Experience}
+\begin{itemize}
+    \item Chinese: native speaker.
+    \item English: professional academic working proficiency, developed through full-time master's study in the United States and full-time PhD study in the United Kingdom.
+    \item Japanese: JLPT N1; one-year full-time undergraduate exchange at Osaka University with JASSO scholarship support.
+\end{itemize}
+
+\section*{References}
+Available upon request.
 
 \end{document}
