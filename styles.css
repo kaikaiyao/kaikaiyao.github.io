@@ -206,6 +206,17 @@ button:focus-visible {
   fill: currentColor;
 }
 
+.icon-email,
+.icon-cv {
+  width: 17px;
+  height: 17px;
+}
+
+.icon-scholar {
+  width: 16px;
+  height: 16px;
+}
+
 .home-page .page-shell {
   display: grid;
   grid-template-columns: minmax(210px, var(--sidebar-width)) minmax(0, 1fr);
