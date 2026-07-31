@@ -423,8 +423,21 @@ button:focus-visible {
   text-align: left;
 }
 
-.section-about .lede {
-  margin-bottom: 11px;
+.about-copy {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.section-about .about-copy .lede {
+  margin: 0;
+}
+
+.advisor-line {
+  margin: 0 0 10px;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.45;
 }
 
 .section-news .news-item > :last-child,

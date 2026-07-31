@@ -155,33 +155,40 @@
       <main id="main" class="content-column">
         <section class="section section-about" id="about" aria-labelledby="about-title">
           <h2 id="about-title">About</h2>
-          <p class="lede">
-            I study <strong>secure and trustworthy machine learning</strong>,
-            with broader interests in the security, privacy, and fairness of
-            AI systems. My current research focuses on model provenance for
-            generative image models, where I develop and rigorously evaluate
-            techniques for model fingerprinting and model watermarking under
-            realistic adversarial conditions. More broadly, I am interested in
-            how technical mechanisms for provenance and verification can support
-            trustworthy deployment of generative AI while also informing
-            questions around digital forensics, regulatory compliance,
-            intellectual property protection, and content authenticity in
-            practice. I am also interested in broader AI applications,
-            especially AI for science, and have prior research experience
-            spanning biology, mechanical engineering, and social
-            science-related problems. I welcome collaborations across
-            research, interdisciplinary projects, and broader real-world
-            applications in these areas (PhD advisor:
-            <a href="https://mjuarezm.github.io/">Dr. Marc Juarez</a>).
+          <div class="about-copy">
+            <p class="lede">
+              <strong>Secure and trustworthy AI.</strong> My main research
+              focuses on provenance and attribution for generative models. I
+              develop and evaluate fingerprinting and watermarking methods under
+              realistic attacks, with applications in content authenticity and
+              digital forensics. My broader interests include privacy and
+              fairness.
+            </p>
+            <p class="lede">
+              <strong>AI ethics.</strong> I study how AI delegation changes
+              learning and responsibility, especially in education. My recent
+              work asks what credentials should still certify and what human
+              capacities education should preserve when AI performs more
+              cognitive work.
+            </p>
+            <p class="lede">
+              <strong>AI for science.</strong> My earlier research spans
+              computational biology, single-cell imaging, and mechanics. I
+              remain interested in machine learning for scientific measurement
+              and discovery.
+            </p>
+          </div>
+
+          <p class="advisor-line">
+            PhD advisor:
+            <a href="https://mjuarezm.github.io/">Dr. Marc Juarez</a>.
           </p>
 
           <ul class="research-tags" aria-label="Research topics">
             <li>AI Security</li>
             <li>Trustworthy AI</li>
             <li>AI Ethics</li>
-            <li>Generative AI</li>
-            <li>Computer Vision</li>
-            <li>Digital Forensics</li>
+            <li>AI Education</li>
             <li>AI for Science</li>
           </ul>
         </section>
@@ -190,23 +197,35 @@
           <h2 id="news-title">News</h2>
           <ul class="news-list" aria-label="Latest news">
             <li class="news-item">
+              <div class="news-date">Jul 2026</div>
+              <div>
+                Two papers accepted to AIES 2026 examine
+                <a href="https://arxiv.org/abs/2607.19988"
+                  >what credentials should still certify</a
+                > and
+                <a href="https://arxiv.org/abs/2607.28041"
+                  >what capacities education should preserve</a
+                > when cognitive work is delegated to AI.
+              </div>
+            </li>
+            <li class="news-item">
               <div class="news-date">May 2026</div>
               <div>
                 Released
                 <a href="https://arxiv.org/abs/2508.05691"
                   ><strong>SPRINT</strong></a
-                >, a secret pixel reconstruction fingerprinting method for
-                robust model attribution of AI-generated images under adaptive
-                attacks.
+                >, a secret pixel reconstruction method for robust attribution
+                of AI-generated images under adaptive attacks.
               </div>
             </li>
             <li class="news-item">
               <div class="news-date">Mar 2026</div>
               <div>
+                Our SaTML 2026 paper
                 <a href="https://arxiv.org/abs/2512.11771"
                   ><strong>Smudged Fingerprints</strong></a
                 >
-                was covered by
+                was featured by
                 <a
                   href="https://www.heraldscotland.com/news/25966793.deepfakes-evade-current-detection-tools-study-shows/"
                   >Herald Scotland</a
@@ -218,29 +237,16 @@
                 <a
                   href="https://www.ed.ac.uk/news/deepfake-detection-methods-vulnerable-to-attack"
                   >University of Edinburgh News</a
-                >, highlighting the broader relevance of this work on robust AI
-                image provenance.
+                >.
               </div>
             </li>
             <li class="news-item">
               <div class="news-date">Mar 2026</div>
               <div>
                 Gave a guest lecture on
-                <strong>Image Provenance in the AI Era</strong> for the
-                graduate course Privacy and Security with Machine Learning at
-                the University of Edinburgh. The
-                <a href="guest-lecture-slides/">slides are available here</a>.
-              </div>
-            </li>
-            <li class="news-item">
-              <div class="news-date">Dec 2025</div>
-              <div>
-                <strong>Smudged Fingerprints</strong>
-                accepted to the 4th IEEE Conference on Secure and Trustworthy
-                Machine Learning (SaTML 2026). Introduces the first systematic
-                adversarial attack framework against model fingerprints in
-                AI-generated images. Preprint available on
-                <a href="https://arxiv.org/abs/2512.11771">arXiv</a>.
+                <strong>Image Provenance in the AI Era</strong> at the
+                University of Edinburgh
+                (<a href="guest-lecture-slides/">slides</a>).
               </div>
             </li>
             <li class="news-item">
@@ -250,7 +256,7 @@
                 <a href="https://ieeexplore.ieee.org/document/10992380"
                   ><strong>SoK: What Makes Private Learning Unfair?</strong></a
                 >
-                at SaTML 2025 (Copenhagen).
+                at SaTML 2025 in Copenhagen.
               </div>
             </li>
           </ul>
@@ -260,12 +266,10 @@
               <li class="news-item">
                 <div class="news-date">Dec 2024</div>
                 <div>
-                  <strong>SoK: What Makes Private Learning Unfair?</strong>
-                  accepted to the 3rd IEEE Conference on Secure and Trustworthy
-                  Machine Learning (SaTML 2025). Provides the first causal
-                  analysis of fairness degradation induced by differential
-                  privacy in machine learning. Preprint available on
-                  <a href="https://arxiv.org/abs/2501.14414">arXiv</a>.
+                  <a href="https://arxiv.org/abs/2501.14414"
+                    ><strong>SoK: What Makes Private Learning Unfair?</strong></a
+                  > accepted to SaTML 2025, providing the first causal analysis
+                  of fairness degradation induced by differential privacy.
                 </div>
               </li>
             </ul>
@@ -290,6 +294,33 @@
                   <span class="pub-year">(2026)</span>
                 </div>
                 <div class="pub-authors"><strong>Yao K</strong>, Juarez M.</div>
+              </div>
+            </li>
+            <li class="pub-item">
+              <div class="pub-badge">AIES</div>
+              <div class="pub-main">
+                <div class="pub-title">
+                  <a href="https://arxiv.org/abs/2607.19988"
+                    >What Does the Credential Still Certify? Cognitive
+                    Stewardship for AI-Mediated Education</a
+                  >
+                  <span class="pub-year">(2026)</span>
+                </div>
+                <div class="pub-authors"><strong>Yao K</strong>.</div>
+              </div>
+            </li>
+            <li class="pub-item">
+              <div class="pub-badge">AIES</div>
+              <div class="pub-main">
+                <div class="pub-title">
+                  <a href="https://arxiv.org/abs/2607.28041"
+                    >When AI Does the Work, What Is Learning For?
+                    Post-Instrumental Learning and the Risk of Capacity
+                    Dissolution</a
+                  >
+                  <span class="pub-year">(2026)</span>
+                </div>
+                <div class="pub-authors"><strong>Yao K</strong>.</div>
               </div>
             </li>
             <li class="pub-item">
