@@ -463,7 +463,8 @@ button:focus-visible {
 .section-publications .pub-title,
 .section-publications .pub-authors,
 .section-teaching .teaching-item > :last-child,
-.section-reviewing .review-item > :last-child {
+.section-reviewing .review-item > :last-child,
+.section-experience .experience-item > :last-child {
   font-family: var(--font-body);
   font-size: 0.85rem;
   letter-spacing: 0;
@@ -498,6 +499,7 @@ button:focus-visible {
 .news-list,
 .teaching-list,
 .review-list,
+.experience-list,
 .pub-list {
   display: grid;
   gap: 0;
@@ -509,6 +511,7 @@ button:focus-visible {
 .news-item,
 .teaching-item,
 .review-item,
+.experience-item,
 .pub-item {
   padding: 3px 0;
 }
@@ -516,6 +519,7 @@ button:focus-visible {
 .news-item:first-child,
 .teaching-item:first-child,
 .review-item:first-child,
+.experience-item:first-child,
 .pub-item:first-child {
   padding-top: 0;
 }
@@ -523,6 +527,7 @@ button:focus-visible {
 .news-item:last-child,
 .teaching-item:last-child,
 .review-item:last-child,
+.experience-item:last-child,
 .pub-item:last-child {
   padding-bottom: 0;
 }
@@ -530,6 +535,7 @@ button:focus-visible {
 .news-item + .news-item,
 .teaching-item + .teaching-item,
 .review-item + .review-item,
+.experience-item + .experience-item,
 .pub-item + .pub-item {
   border-top: 1px solid var(--border-soft);
 }
@@ -584,7 +590,8 @@ button:focus-visible {
 
 .pub-badge,
 .teaching-label,
-.review-label {
+.review-label,
+.experience-label {
   display: inline-flex;
   width: 100%;
   min-height: 22px;
@@ -683,6 +690,29 @@ button:focus-visible {
   grid-template-columns: 132px minmax(0, 1fr);
   gap: 10px;
   align-items: start;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: 108px minmax(0, 1fr);
+  gap: 10px;
+  align-items: start;
+}
+
+.experience-details {
+  display: flex;
+  min-width: 0;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 2px 16px;
+}
+
+.experience-years {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
 }
 
 .teaching-entries,
@@ -957,14 +987,16 @@ button:focus-visible {
   .news-item,
   .pub-item,
   .teaching-item,
-  .review-item {
+  .review-item,
+  .experience-item {
     grid-template-columns: 1fr;
     gap: 5px;
   }
 
   .pub-badge,
   .teaching-label,
-  .review-label {
+  .review-label,
+  .experience-label {
     width: fit-content;
     max-width: 100%;
     justify-content: flex-start;
