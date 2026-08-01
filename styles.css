@@ -298,20 +298,28 @@ button:focus-visible {
 
 .profile-meta {
   display: grid;
-  gap: 2px;
+  gap: 1px;
   margin: 0 0 12px;
   color: var(--muted);
-  font-size: 0.71rem;
-  line-height: 1.45;
 }
 
-.profile-meta a {
-  color: var(--muted);
+.profile-meta .profile-email {
+  margin-bottom: 2px;
+  color: var(--label-ink);
+  font-size: 0.79rem;
+  font-weight: 600;
+  line-height: 1.4;
   text-decoration: none;
 }
 
-.profile-meta a:hover {
+.profile-meta .profile-email:hover {
   color: var(--accent);
+}
+
+.profile-address {
+  color: var(--muted);
+  font-size: 0.64rem;
+  line-height: 1.4;
 }
 
 .contact-icons {
