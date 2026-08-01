@@ -545,7 +545,7 @@ button:focus-visible {
   padding-top: 2px;
   color: var(--accent);
   font-size: 0.64rem;
-  font-weight: 400;
+  font-weight: 750;
   letter-spacing: 0.1em;
   line-height: 1.42;
   text-transform: uppercase;
@@ -565,10 +565,6 @@ button:focus-visible {
   color: var(--accent);
   font-size: 0.71rem;
   font-weight: 650;
-}
-
-.section-news .archive-block summary {
-  font-weight: 400;
 }
 
 .archive-block summary:hover {
