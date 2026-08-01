@@ -547,7 +547,8 @@ button:focus-visible {
   align-items: start;
 }
 
-.news-date {
+.news-date,
+.experience-years {
   padding-top: 2px;
   color: var(--accent);
   font-size: 0.64rem;
@@ -590,8 +591,7 @@ button:focus-visible {
 
 .pub-badge,
 .teaching-label,
-.review-label,
-.experience-label {
+.review-label {
   display: inline-flex;
   width: 100%;
   min-height: 22px;
@@ -694,25 +694,9 @@ button:focus-visible {
 
 .experience-item {
   display: grid;
-  grid-template-columns: 108px minmax(0, 1fr);
+  grid-template-columns: 72px minmax(0, 1fr);
   gap: 10px;
   align-items: start;
-}
-
-.experience-details {
-  display: flex;
-  min-width: 0;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 2px 16px;
-}
-
-.experience-years {
-  color: var(--muted);
-  font-size: 0.78rem;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
 }
 
 .teaching-entries,
@@ -995,8 +979,7 @@ button:focus-visible {
 
   .pub-badge,
   .teaching-label,
-  .review-label,
-  .experience-label {
+  .review-label {
     width: fit-content;
     max-width: 100%;
     justify-content: flex-start;
