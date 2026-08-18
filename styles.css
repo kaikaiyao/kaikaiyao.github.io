@@ -548,24 +548,6 @@ button:focus-visible {
   line-height: 1.15;
 }
 
-.research-tags li:nth-child(2) {
-  border-color: #a8dab5;
-  background: #e6f4ea;
-  color: #137333;
-}
-
-.research-tags li:nth-child(3) {
-  border-color: #fde293;
-  background: #fef7e0;
-  color: #8a4b00;
-}
-
-.research-tags li:nth-child(4) {
-  border-color: #f6aea9;
-  background: #fce8e6;
-  color: #a50e0e;
-}
-
 .news-list,
 .teaching-list,
 .review-list,
