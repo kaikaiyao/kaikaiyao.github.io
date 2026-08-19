@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#f8fafd" />
+    <title>Blogs | Kai Yao</title>
+    <meta
+      name="description"
+      content="Selected technical writing by Kai Yao on machine-learning systems, developer tooling, model optimization, and trustworthy AI."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Blogs | Kai Yao" />
+    <meta
+      property="og:description"
+      content="Selected technical writing on machine-learning systems, developer tooling, model optimization, and trustworthy AI."
+    />
+    <meta property="og:url" content="https://kaikaiyao.github.io/blogs/" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Blogs | Kai Yao" />
+    <meta
+      name="twitter:description"
+      content="Selected technical writing on machine-learning systems, developer tooling, model optimization, and trustworthy AI."
+    />
+    <link rel="canonical" href="https://kaikaiyao.github.io/blogs/" />
+    <link rel="icon" type="image/jpeg" href="../favicon.jpg" />
+    <link rel="stylesheet" href="../styles.css?v=20260819-1" />
+  </head>
+
+  <body class="blogs-page">
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <nav class="section-nav top-nav-wrap" aria-label="Site navigation">
+      <div class="container top-nav-bar">
+        <div class="top-nav">
+          <a href="../#about">About</a>
+          <a href="../#news">News</a>
+          <a href="../#publications">Publications</a>
+          <a href="../#teaching">Teaching</a>
+          <a href="../#reviewing">Service</a>
+          <a href="../#industry-experience">Industry</a>
+          <a href="./" aria-current="page">Blogs</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main" class="blogs-shell container">
+      <div class="blogs-panel">
+        <header class="blogs-header">
+          <p class="blogs-kicker">Kai Yao · Selected writing</p>
+          <h1>Blogs</h1>
+          <p>
+            Technical writing on machine-learning systems, developer tooling,
+            and trustworthy AI. This archive begins with my work on Neural
+            Coder at Intel and will grow with future writing across research
+            and engineering.
+          </p>
+        </header>
+
+        <section class="blogs-feature" aria-labelledby="featured-archive-title">
+          <p class="blogs-section-label">Featured archive · Intel, 2022</p>
+          <div class="blogs-feature-grid">
+            <div class="blogs-feature-copy">
+              <h2 id="featured-archive-title">
+                Making model optimization a one-click workflow
+              </h2>
+              <p>
+                At Intel, I helped develop Neural Coder, a component of Intel Neural
+                Compressor that automated the insertion and evaluation of
+                deep-learning optimizations in existing Python code. It combined
+                static program analysis—syntax analysis, type inference, and
+                call-graph parsing—with automated benchmarking and brought the
+                workflow from PyTorch scripts to Hugging Face Transformers,
+                Alibaba Cloud PAI-DSW, JupyterLab, and Visual Studio Code.
+              </p>
+              <p class="blogs-recognition">
+                Neural Coder was demonstrated in Intel CEO Pat Gelsinger’s
+                <a
+                  href="https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/AI-Everywhere-Innovation-2022-Wrap-Up/post/1421680"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Intel Innovation 2022 keynote</a
+                >. This work was recognized internally at Intel with the
+                AIA Division Achievement Award for Neural Coder innovation
+                (2022) and the CESG SW AI Division Recognition Award for the
+                Alibaba Cloud collaboration (2023); both are listed on my
+                <a
+                  href="https://www.linkedin.com/in/kai-yao-ai-algorithm/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >professional profile</a
+                >.
+              </p>
+            </div>
+
+            <dl class="blogs-impact-grid" aria-label="Selected impact highlights">
+              <div>
+                <dt>10×+</dt>
+                <dd>
+                  <a
+                    href="https://edc.intel.com/content/www/us/en/products/performance/benchmarks/intel-innovation-2022/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Intel-reported</a
+                  > ResNet50 inference gain in the 4th Gen Xeon keynote demo,
+                  with accuracy maintained
+                </dd>
+              </div>
+              <div>
+                <dt>18</dt>
+                <dd>
+                  Trainer-based PyTorch tasks supported by the Hugging Face
+                  integration
+                </dd>
+              </div>
+              <div>
+                <dt>~1.7×</dt>
+                <dd>
+                  reported acceleration on 3rd Gen Xeon, typically with less
+                  than 1% accuracy loss
+                </dd>
+              </div>
+              <div>
+                <dt>2</dt>
+                <dd>
+                  internal Intel division awards for Neural Coder innovation
+                  and the Alibaba Cloud collaboration
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
+        <section class="blogs-archive" aria-labelledby="writing-archive-title">
+          <p class="blogs-section-label">Writing archive</p>
+          <div class="blogs-year-heading">
+            <h2 id="writing-archive-title">2022</h2>
+            <span>4 articles · newest first</span>
+          </div>
+
+          <ol class="blog-list">
+            <li>
+              <article class="blog-entry">
+                <div class="blog-entry-meta">
+                  <time class="blog-date" datetime="2022-12-06">6 Dec 2022</time>
+                  <span class="blog-authorship">First author</span>
+                </div>
+                <div class="blog-entry-main">
+                  <p class="blog-category">Model optimization</p>
+                  <h3 class="blog-title">
+                    One-Click Acceleration of Hugging Face Transformers with
+                    Intel’s Neural Coder
+                  </h3>
+                  <p class="blog-summary">
+                    Showed how Neural Coder automatically enabled Optimum Intel
+                    INT8 quantization for Hugging Face Transformers. The evaluated
+                    workflow covered 18 Trainer-based PyTorch tasks and reported
+                    about 1.7× inference acceleration on 3rd Gen Intel Xeon
+                    processors, typically with less than 1% accuracy loss.
+                  </p>
+                  <p class="blog-authors">
+                    <span>Authors:</span> Kai Yao, Yuwei Huang, Yu Liao, Wenjiao
+                    Yue, Haihao Shen, and Huma Abidi
+                  </p>
+                  <div class="blog-entry-footer">
+                    <ul class="blog-tags" aria-label="Article topics">
+                      <li>Hugging Face</li>
+                      <li>INT8</li>
+                      <li>Optimum Intel</li>
+                    </ul>
+                    <a
+                      class="blog-source-link"
+                      href="https://medium.com/intel-analytics-software/one-click-acceleration-of-huggingface-transformers-with-optimum-intel-by-neural-coder-f35ca3b1a82f"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read on Intel Analytics Software
+                      <span aria-hidden="true">↗</span></a
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="blog-entry">
+                <div class="blog-entry-meta">
+                  <time class="blog-date" datetime="2022-12-06">6 Dec 2022</time>
+                  <span class="blog-authorship">Second author</span>
+                </div>
+                <div class="blog-entry-main">
+                  <p class="blog-category">Developer tooling</p>
+                  <h3 class="blog-title">
+                    One-Click Quantization of Deep Learning Models with the
+                    Neural Coder Extension
+                  </h3>
+                  <p class="blog-summary">
+                    Presented a Visual Studio Code extension that applied static
+                    or dynamic INT8 quantization and BF16 optimization, preserved
+                    generated code changes as inspectable patches, and benchmarked
+                    candidate transformations directly inside the editor.
+                  </p>
+                  <p class="blog-authors">
+                    <span>Authors:</span> Wenjiao Yue, Kai Yao, Suyue Chen,
+                    Haihao Shen, and Huma Abidi
+                  </p>
+                  <div class="blog-entry-footer">
+                    <ul class="blog-tags" aria-label="Article topics">
+                      <li>VS Code</li>
+                      <li>Quantization</li>
+                      <li>Developer tools</li>
+                    </ul>
+                    <a
+                      class="blog-source-link"
+                      href="https://medium.com/intel-analytics-software/one-click-quantize-your-deep-learning-code-in-visual-studio-code-with-neural-coder-extension-8be1a0022c29"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read on Intel Analytics Software
+                      <span aria-hidden="true">↗</span></a
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="blog-entry">
+                <div class="blog-entry-meta">
+                  <time class="blog-date" datetime="2022-09-26">26 Sep 2022</time>
+                  <span class="blog-authorship">First-listed Intel author</span>
+                </div>
+                <div class="blog-entry-main">
+                  <p class="blog-category">Industry collaboration</p>
+                  <h3 class="blog-title">
+                    Alibaba Cloud and Intel Neural Compressor Deliver Better
+                    Productivity for PyTorch Users
+                  </h3>
+                  <p class="blog-summary">
+                    Documented an Intel–Alibaba integration that brought Neural
+                    Coder into Alibaba Cloud PAI-DSW and exposed BladeDISC as an
+                    optimization backend, enabling one-click optimization and
+                    automatic before-and-after benchmarking from JupyterLab.
+                  </p>
+                  <p class="blog-authors">
+                    <span>Authors:</span> Shen Li (Alibaba); Kai Yao, Shan Zhou,
+                    Haihao Shen, and Huma Abidi (Intel)
+                  </p>
+                  <div class="blog-entry-footer">
+                    <ul class="blog-tags" aria-label="Article topics">
+                      <li>Alibaba Cloud</li>
+                      <li>BladeDISC</li>
+                      <li>JupyterLab</li>
+                    </ul>
+                    <a
+                      class="blog-source-link"
+                      href="https://medium.com/intel-analytics-software/alibaba-cloud-collaborates-with-intel-neural-compressor-for-better-productivity-and-performance-83cdb6500420"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read on Intel Analytics Software
+                      <span aria-hidden="true">↗</span></a
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+
+            <li>
+              <article class="blog-entry">
+                <div class="blog-entry-meta">
+                  <time class="blog-date" datetime="2022-08-19">19 Aug 2022</time>
+                  <span class="blog-authorship">First author</span>
+                </div>
+                <div class="blog-entry-main">
+                  <p class="blog-category">ML systems</p>
+                  <h3 class="blog-title">
+                    One-Click Enabling of Intel Neural Compressor Features in
+                    PyTorch Scripts
+                  </h3>
+                  <p class="blog-summary">
+                    Introduced Neural Coder, a one-click workflow combining
+                    deep-learning optimization rules with Python syntax analysis,
+                    static type inference, and call-graph parsing to insert
+                    quantization code into PyTorch scripts and benchmark applicable
+                    optimizations.
+                  </p>
+                  <p class="blog-authors">
+                    <span>Authors:</span> Kai Yao, Haihao Shen, and Huma Abidi
+                  </p>
+                  <div class="blog-entry-footer">
+                    <ul class="blog-tags" aria-label="Article topics">
+                      <li>PyTorch</li>
+                      <li>Static analysis</li>
+                      <li>Quantization</li>
+                    </ul>
+                    <a
+                      class="blog-source-link"
+                      href="https://medium.com/intel-analytics-software/one-click-enable-intel-neural-compressor-features-in-pytorch-scripts-5d4e31f5a22b"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Read on Intel Analytics Software
+                      <span aria-hidden="true">↗</span></a
+                    >
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ol>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-grid">
+            <div>© <span id="year"></span> Kai Yao</div>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script>
+      (function () {
+        var yearEl = document.getElementById("year");
+        if (yearEl) {
+          yearEl.textContent = String(new Date().getFullYear());
+        }
+      })();
+    </script>
+  </body>
+</html>
