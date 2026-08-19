@@ -1440,20 +1440,28 @@ button:focus-visible {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 420px) {
   .top-nav {
-    gap: 3px 9px;
+    gap: 10px;
   }
 
   .top-nav a {
-    font-size: 0.69rem;
-    letter-spacing: 0.055em;
+    font-size: 0.63rem;
+    letter-spacing: 0.015em;
+  }
+
+  .blogs-impact-grid {
+    grid-template-columns: 1fr;
   }
 }
 
-@media (max-width: 420px) {
-  .blogs-impact-grid {
-    grid-template-columns: 1fr;
+@media (max-width: 380px) {
+  .top-nav {
+    gap: 7px;
+  }
+
+  .top-nav a {
+    font-size: 0.61rem;
   }
 }
 
