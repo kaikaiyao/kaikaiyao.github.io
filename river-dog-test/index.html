@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>滨江小狗人格测试｜测测你是哪只小狗</title>
+    <meta name="description" content="10 个滨江散步切片，测测你是哪只时髦小狗。">
+    <meta name="theme-color" content="#f6f3ec">
+    <meta property="og:title" content="滨江小狗人格测试">
+    <meta property="og:description" content="测测你是哪只滨江散步时髦小狗。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kaikaiyao.github.io/river-dog-test/assets/riverwalk-hero.jpg">
+    <link rel="preload" href="./assets/riverwalk-hero.jpg" as="image">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css?v=20260528-slider">
+  </head>
+  <body>
+    <div class="site-stage">
+      <main class="phone" id="app">
+        <section class="screen intro-screen is-active" data-screen="intro" aria-labelledby="intro-title">
+          <img class="hero-image" src="./assets/riverwalk-hero.jpg" alt="">
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="intro-copy-block">
+            <p class="eyebrow">River Walk Dog Test</p>
+            <h1 id="intro-title">测测你是哪只小狗</h1>
+            <p class="intro-copy">江边风、冰美式、艺术馆门口和一条很会营业的牵引绳。</p>
+            <button class="primary-button" type="button" data-start>
+              开始散步
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="route-strip" aria-hidden="true">
+            <span>10 道小题</span>
+            <span>14 种小狗</span>
+            <span>约 2 分钟</span>
+          </div>
+        </section>
+
+        <section class="screen quiz-screen" data-screen="quiz" aria-live="polite">
+          <header class="quiz-header">
+            <button class="icon-button" type="button" data-back aria-label="返回上一题">‹</button>
+            <div class="progress-block">
+              <div class="progress-copy">
+                <span data-step>01 / 10</span>
+                <span data-mode>滨江切片</span>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <i data-progress></i>
+              </div>
+            </div>
+          </header>
+
+          <article class="question-card">
+            <p class="eyebrow" data-question-kicker>Question 01</p>
+            <h2 data-question-title></h2>
+            <p class="question-help" data-question-help></p>
+            <div class="options" data-options></div>
+            <button class="primary-button next-button" type="button" data-next hidden>确认这一段</button>
+          </article>
+        </section>
+
+        <section class="screen reveal-screen" data-screen="reveal" aria-live="polite">
+          <div class="reveal-card">
+            <span>正在匹配今日犬种</span>
+            <strong data-reveal-title>今日小狗</strong>
+            <span>牵引绳已扣好</span>
+          </div>
+        </section>
+
+        <section class="screen result-screen" data-screen="result" aria-live="polite">
+          <div class="result-art" data-result-art></div>
+
+          <div class="result-content">
+            <p class="eyebrow">Your River Dog</p>
+            <h2 data-result-name></h2>
+            <p class="result-line" data-result-line></p>
+            <div class="tag-row" data-result-tags></div>
+
+            <section class="result-section">
+              <h3>你这只小狗</h3>
+              <p data-result-description></p>
+            </section>
+
+            <section class="result-section two-columns">
+              <div>
+                <h3>朋友眼中的你</h3>
+                <p data-result-friend></p>
+              </div>
+              <div>
+                <h3>今日遛狗路线</h3>
+                <p data-result-route></p>
+              </div>
+            </section>
+
+            <section class="trait-panel">
+              <div class="panel-title">
+                <p class="eyebrow">小狗使用说明</p>
+                <span data-match-score></span>
+              </div>
+              <div data-traits></div>
+            </section>
+
+            <div class="share-quote">
+              <p data-result-share-title></p>
+            </div>
+
+            <div class="action-grid">
+              <button class="primary-button" type="button" data-save>保存结果图</button>
+              <button class="ghost-button" type="button" data-share>分享测试</button>
+            </div>
+            <button class="text-button" type="button" data-gallery-toggle>查看全部小狗图鉴</button>
+            <div class="breed-gallery" data-gallery hidden></div>
+            <button class="text-button" type="button" data-restart>重新散步一次</button>
+            <p class="result-disclaimer">娱乐向小测试，不是科学性格诊断。适合发给朋友一起互相认领。</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <canvas class="share-canvas" data-canvas width="1080" height="1920" aria-hidden="true"></canvas>
+    <script src="./app.js?v=20260528-slider" defer></script>
+  </body>
+</html>

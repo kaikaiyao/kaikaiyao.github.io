@@ -1,0 +1,257 @@
+/* Intel-inspired visual skin: layout, type sizes and spacing stay in styles.css.
+   Blue palette based on Intel's current public website design tokens. */
+.home-page,
+.blogs-page {
+  --navy: #000f28;
+  --blue: #0046c8;
+  --energy: #00c7fd;
+  --blue-soft: #cdd8ea;
+  --ice: #eef4fe;
+  --slate: #3f587a;
+  --grey: #f7f8fa;
+  --line: #dfe9fe;
+  --font-body: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-ui: var(--font-body);
+  --font-display: var(--font-body);
+  --text: #000f28;
+  --muted: #637085;
+  --accent: #0046c8;
+  --accent-strong: #004a86;
+  --link-hover: #00285a;
+  --accent-rgb: 0, 70, 200;
+  --label-ink: #000f28;
+  --label-rgb: 0, 15, 40;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-muted: #eef4fe;
+  --tag-bg: #ffffff;
+  --tag-border: #cdd8ea;
+  --tag-text: #0046c8;
+  --border: rgba(205,216,234,.65);
+  --border-soft: rgba(0,15,40,.11);
+  --radius-lg: 4px;
+  --radius-md: 4px;
+  --radius-sm: 2px;
+  --shadow-sm: none;
+  --shadow-card: none;
+}
+
+body.home-page,
+body.blogs-page {
+  position: relative;
+  isolation: isolate;
+  background: var(--bg);
+}
+
+.home-page::before,
+.blogs-page::before {
+  position: absolute;
+  z-index: -1;
+  top: 120px;
+  left: 0;
+  width: 40vw;
+  height: 640px;
+  border: 1px solid transparent;
+  border-left: 0;
+  background: transparent;
+  clip-path: polygon(0 0, 100% 18%, 100% 86%, 0 100%);
+  pointer-events: none;
+  content: "";
+}
+
+.home-page .top-nav-wrap,
+.blogs-page .top-nav-wrap {
+  border-bottom-color: rgba(205,216,234,.55);
+  background: var(--surface);
+  box-shadow: none;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.home-page .top-nav a,
+.blogs-page .top-nav a { color: var(--navy); font-weight: 600; }
+.home-page .top-nav a[aria-current="location"],
+.blogs-page .top-nav a[aria-current="page"] { color: var(--blue); }
+.home-page .top-nav a[aria-current="location"]::after { opacity: 1; transform: none; }
+.home-page .top-nav a:focus-visible,
+.blogs-page .top-nav a:focus-visible { outline-offset: 1px; }
+
+.home-page .profile-column { align-self: stretch; }
+.home-page .profile-sticky {
+  border-color: var(--line);
+  border-top-color: var(--blue);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.home-page .profile-portrait {
+  border-color: rgba(255,255,255,.90);
+  box-shadow: 0 0 0 1px rgba(205,216,234,.6);
+}
+.home-page .profile-portrait img {
+  object-position: 50% 30%;
+  transform: scale(1.25);
+}
+.home-page .title-row h1 { color: var(--navy); font-weight: 600; }
+.home-page .role span:first-child { color: var(--accent-strong); }
+.home-page .contact-icon {
+  border-color: var(--blue-soft);
+  background: var(--surface);
+  color: var(--navy);
+}
+.home-page .contact-icon:hover {
+  border-color: var(--blue);
+  color: #fff;
+  background: var(--blue);
+  box-shadow: none;
+}
+
+.home-page .content-column {
+  border-color: transparent;
+  background: var(--surface);
+  box-shadow: none;
+}
+.home-page .section h2 { color: var(--navy); font-weight: 600; }
+.home-page .section h2::after { background: var(--line); }
+
+/* A quiet introductory surface within the existing section bounds. */
+.home-page .section-about { position: relative; isolation: isolate; }
+.home-page .section-about::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0 -22px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--ice);
+  box-shadow: inset 0 1px 0 rgba(0,70,200,.08);
+  pointer-events: none;
+  content: "";
+}
+.home-page .section-about h2 { color: var(--navy); }
+.home-page .section-about .about-copy .lede strong { color: var(--blue); }
+.home-page .section-about h2::after { background: rgba(0,70,200,.18); }
+.home-page .section-about .lede { color: var(--text); }
+.home-page .section-about .advisor-line { color: var(--muted); }
+.home-page .section-about a { color: var(--blue); text-decoration-color: rgba(0,70,200,.35); }
+.home-page .section-about a:hover { color: var(--link-hover); text-decoration-color: currentColor; }
+.home-page .section-about a:focus-visible { outline-color: var(--blue); }
+
+.home-page .pub-title { font-weight: 500; }
+.home-page .pub-title a { color: var(--navy); text-decoration-color: rgba(0,15,40,.25); }
+.home-page .pub-title a:hover { color: var(--accent-strong); text-decoration-color: currentColor; }
+.home-page .pub-title .pub-resource-tag {
+  border-color: var(--blue-soft);
+  background: var(--surface);
+  color: var(--blue);
+  text-decoration: none;
+}
+.home-page .pub-title .pub-resource-tag:hover {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #fff;
+  text-decoration: none;
+}
+.home-page .pub-authors { color: var(--muted); }
+.home-page .pub-authors strong { color: var(--navy); }
+.home-page .pub-badge {
+  border-color: var(--blue);
+  background: var(--blue);
+  color: #fff;
+}
+.home-page .teaching-label,
+.home-page .review-label {
+  border-color: var(--slate);
+  background: var(--slate);
+  color: #fff;
+  box-shadow: none;
+}
+.home-page .archive-block summary { color: var(--accent-strong); }
+.home-page .archive-block summary::marker { color: var(--blue); }
+
+/* The Intel work page shares the homepage skin and keeps its original spacing. */
+.blogs-page .blogs-panel {
+  border-color: transparent;
+  border-top-color: var(--blue);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+}
+.blogs-page .blogs-header { position: relative; isolation: isolate; }
+.blogs-page .blogs-header::before {
+  position: absolute;
+  z-index: -1;
+  inset: 0 -26px;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+  background: var(--ice);
+  box-shadow: inset 0 1px 0 rgba(0,70,200,.08);
+  pointer-events: none;
+  content: "";
+}
+.blogs-page .blogs-header h1 { color: var(--navy); font-weight: 600; }
+.blogs-page .blogs-header .blogs-kicker { color: var(--blue); }
+.blogs-page .blogs-header > p:last-child { color: var(--muted); }
+.blogs-page .blogs-recognition {
+  border-left-color: var(--blue);
+  background: var(--ice);
+  color: var(--muted);
+}
+.blogs-page .blogs-recognition a,
+.blogs-page .blogs-impact-grid a { color: var(--accent-strong); }
+.blogs-page .blogs-impact-grid {
+  border-color: var(--line);
+  background: var(--line);
+  box-shadow: var(--shadow-sm);
+}
+.blogs-page .blogs-impact-grid > div {
+  background: var(--ice);
+}
+.blogs-page .blogs-impact-grid dt { color: var(--navy); }
+.blogs-page .blog-entry {
+  border-color: rgba(205,216,234,.50);
+  background: var(--surface);
+  box-shadow: none;
+}
+.blogs-page .blog-entry:hover {
+  border-color: var(--blue-soft);
+  background: var(--ice);
+}
+.blogs-page .blog-source-link { color: var(--accent-strong); }
+
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .home-page .top-nav-wrap,
+  .home-page .profile-sticky,
+  .blogs-page .top-nav-wrap,
+  .blogs-page .blogs-panel { background: var(--surface); }
+}
+@media (prefers-reduced-transparency: reduce) {
+  .home-page .top-nav-wrap,
+  .home-page .profile-sticky,
+  .blogs-page .top-nav-wrap,
+  .blogs-page .blogs-panel { background: var(--surface); -webkit-backdrop-filter: none; backdrop-filter: none; }
+}
+@media (max-width: 640px) {
+  .home-page .section-about::before { right: -13px; left: -13px; }
+  .blogs-page .blogs-header::before { right: -14px; left: -14px; }
+}
+@media print {
+  body.home-page,
+  body.blogs-page { background: #fff; }
+  .home-page::before,
+  .home-page .top-nav-wrap,
+  .home-page .section-about::before,
+  .blogs-page::before,
+  .blogs-page .top-nav-wrap,
+  .blogs-page .blogs-header::before { display: none; }
+  .home-page .profile-sticky,
+  .home-page .content-column,
+  .blogs-page .blogs-panel { background: #fff; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .home-page .section-about h2,
+  .home-page .section-about .lede,
+  .home-page .section-about .about-copy .lede strong,
+  .home-page .section-about .advisor-line,
+  .home-page .section-about a,
+  .blogs-page .blogs-header h1,
+  .blogs-page .blogs-header .blogs-kicker,
+  .blogs-page .blogs-header > p:last-child { color: var(--navy); }
+  .home-page .profile-sticky { position: static; }
+}
