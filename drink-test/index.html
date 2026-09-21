@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>测测你是哪杯都市轻奢饮品</title>
+    <meta name="description" content="用 60 秒，从节奏、边界、审美和情绪里调出你的专属风味人格。">
+    <meta property="og:title" content="测测你是哪杯都市轻奢饮品">
+    <meta property="og:description" content="生成一张你的高级饮品人格卡。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/hero.webp">
+    <meta name="theme-color" content="#fbf8f0">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main id="app" class="app-shell">
+      <section class="screen hero-screen is-active" data-screen="intro" aria-labelledby="intro-title">
+        <div class="soft-orbit" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="hero-copy">
+          <p class="eyebrow">Freshly Made Personality Lab</p>
+          <h1 id="intro-title">测测你是哪杯都市轻奢饮品</h1>
+          <p>用 60 秒，从你的节奏、边界、审美和情绪里，调出一杯更像你的都市风味。</p>
+          <button class="primary-action" type="button" data-start>
+            开始调制
+            <span aria-hidden="true">+</span>
+          </button>
+        </div>
+        <div class="hero-product">
+          <img src="./assets/hero.webp" alt="高级饮品测试主视觉">
+          <div class="cup-sticker" aria-hidden="true">
+            <span>Limited</span>
+            <strong>10</strong>
+            <span>Flavors</span>
+          </div>
+        </div>
+        <div class="mini-menu" aria-hidden="true">
+          <span>8 道风味选择</span>
+          <span>生成专属饮品卡</span>
+        </div>
+      </section>
+
+      <section class="screen quiz-screen" data-screen="quiz" aria-live="polite">
+        <header class="quiz-header">
+          <button class="icon-action" type="button" data-back aria-label="返回上一题">←</button>
+          <div class="mix-meter" aria-hidden="true">
+            <div class="mix-meta">
+              <span data-step-label>01 / 08</span>
+              <span data-layer-label>Base Tea</span>
+            </div>
+            <div class="liquid-track">
+              <span data-progress-fill></span>
+            </div>
+          </div>
+        </header>
+        <article class="question-card">
+          <p class="eyebrow" data-question-kicker>Flavor 01</p>
+          <h2 data-question-title></h2>
+          <div class="option-list" data-options></div>
+        </article>
+      </section>
+
+      <section class="screen mixing-screen" data-screen="mixing" aria-live="polite">
+        <div class="mixing-cup" aria-hidden="true">
+          <span></span>
+          <i></i>
+        </div>
+        <p>正在生成你的今日限定饮品卡</p>
+        <strong data-mixing-name>Fresh Drink</strong>
+      </section>
+
+      <section class="screen result-screen" data-screen="result" aria-live="polite">
+        <div class="drink-card">
+          <div class="result-image-wrap">
+            <img data-result-image alt="">
+            <div class="batch-badge">
+              <span data-result-code>D01</span>
+              <small>Today's Special</small>
+            </div>
+          </div>
+          <div class="result-copy">
+            <p class="eyebrow">你的专属饮品人格是</p>
+            <h2 data-result-title></h2>
+            <span class="english-name" data-result-english></span>
+            <p class="result-line" data-result-line></p>
+            <div class="tag-row" data-result-tags></div>
+            <p class="description" data-result-description></p>
+            <div class="formula-panel">
+              <p>风味配方</p>
+              <div data-formula></div>
+            </div>
+            <dl>
+              <div>
+                <dt>适合场景</dt>
+                <dd data-result-scene></dd>
+              </div>
+              <div>
+                <dt>温柔提醒</dt>
+                <dd data-result-reminder></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <div class="result-actions">
+          <button class="primary-action" type="button" data-share>分享饮品卡</button>
+          <button class="secondary-action" type="button" data-restart>重新调制</button>
+        </div>
+        <button class="text-action" type="button" data-toggle-gallery>查看全部饮品</button>
+        <div class="drink-gallery" data-gallery hidden></div>
+      </section>
+    </main>
+    <canvas class="share-canvas" data-share-canvas width="1080" height="1920" aria-hidden="true"></canvas>
+    <script src="./app.js" defer></script>
+  </body>
+</html>

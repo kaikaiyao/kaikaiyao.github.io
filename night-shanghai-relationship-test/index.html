@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>夜上海关系测试｜Which Ship Suits You the Best Now?</title>
+    <meta name="description" content="8 道夜上海关系测试题，测测你当前状态适合哪种浪漫关系。">
+    <meta name="theme-color" content="#09090f">
+    <meta property="og:title" content="夜上海关系测试">
+    <meta property="og:description" content="测测你当前状态适合哪种浪漫关系。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kaikaiyao.github.io/night-shanghai-relationship-test/assets/hero-night.webp">
+    <link rel="preload" href="./assets/hero-night.webp" as="image">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="site-stage">
+      <main class="phone" id="app">
+        <section class="screen intro-screen is-active" data-screen="intro" aria-labelledby="intro-title">
+          <img class="screen-bg" src="./assets/hero-night.webp" alt="">
+          <div class="screen-shade" aria-hidden="true"></div>
+          <div class="city-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="intro-content">
+            <p class="eyebrow">Shanghai Midnight Ship Test</p>
+            <h1 id="intro-title">夜上海关系测试</h1>
+            <p class="intro-copy">测测你当前的状态，适合哪一种浪漫关系。</p>
+            <button class="main-button" type="button" data-start>
+              开始测
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="mini-manifest" aria-hidden="true">
+            <span>8 Questions</span>
+            <span>8 Ships</span>
+            <span>Tonight</span>
+          </div>
+        </section>
+
+        <section class="screen quiz-screen" data-screen="quiz" aria-live="polite">
+          <header class="quiz-header">
+            <button class="icon-button" type="button" data-back aria-label="返回上一题">‹</button>
+            <div class="progress-block">
+              <div class="progress-copy">
+                <span data-step>01 / 08</span>
+                <span>Midnight route</span>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <i data-progress></i>
+              </div>
+            </div>
+          </header>
+
+          <article class="question-card">
+            <p class="eyebrow" data-question-kicker>Question 01</p>
+            <h2 data-question-title></h2>
+            <div class="options" data-options></div>
+          </article>
+        </section>
+
+        <section class="screen reveal-screen" data-screen="reveal" aria-live="polite">
+          <div class="reveal-ticket">
+            <span>Tonight's ticket</span>
+            <strong data-reveal-title>Ship</strong>
+            <span>Huangpu signal locked</span>
+          </div>
+        </section>
+
+        <section class="screen result-screen" data-screen="result" aria-live="polite">
+          <div class="result-art">
+            <img data-result-image alt="">
+            <div class="result-art-shade" aria-hidden="true"></div>
+            <div class="result-title-block">
+              <p>你的当前适配关系是</p>
+              <h2 data-result-title></h2>
+              <span data-result-en></span>
+            </div>
+          </div>
+
+          <div class="result-content">
+            <p class="result-line" data-result-line></p>
+            <div class="tag-row" data-result-tags></div>
+
+            <section class="result-section">
+              <h3>关系解析</h3>
+              <p data-result-description></p>
+            </section>
+
+            <section class="result-section two-columns">
+              <div>
+                <h3>适合你的相处方式</h3>
+                <p data-result-mode></p>
+              </div>
+              <div>
+                <h3>都市清醒提醒</h3>
+                <p data-result-reminder></p>
+              </div>
+            </section>
+
+            <section class="signal-panel">
+              <p class="eyebrow">Tonight signal</p>
+              <div data-signals></div>
+            </section>
+
+            <div class="share-guide">
+              <span>把这张夜票发给想一起走过晚风的人</span>
+            </div>
+
+            <div class="action-grid">
+              <button class="main-button" type="button" data-save>保存结果图</button>
+              <button class="ghost-button" type="button" data-share>分享测试</button>
+            </div>
+            <button class="text-button" type="button" data-restart>重新测一次</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <canvas class="share-canvas" data-canvas width="1080" height="1920" aria-hidden="true"></canvas>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
