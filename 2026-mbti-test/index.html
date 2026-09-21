@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>2026 最新版 MBTI 测试｜人格光谱实验室</title>
+    <meta name="description" content="28 个生活切面，生成你的 2026 人格类型与专属光谱。非官方娱乐测试，仅供自我观察与分享。">
+    <meta name="theme-color" content="#121218">
+    <meta property="og:title" content="2026 最新版 MBTI 测试">
+    <meta property="og:description" content="用 28 个生活切面生成你的 2026 人格光谱。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://kaikaiyao.github.io/2026-mbti-test/assets/hero-spectrum.webp">
+    <link rel="preload" href="./assets/hero-spectrum.webp" as="image">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="site-stage">
+      <main class="phone" id="app">
+        <section class="screen intro-screen is-active" data-screen="intro" aria-labelledby="intro-title">
+          <img class="hero-image" src="./assets/hero-spectrum.webp" alt="">
+          <div class="hero-shade" aria-hidden="true"></div>
+          <div class="spectrum-lines" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="intro-content">
+            <p class="eyebrow">2026 Personality Lab</p>
+            <h1 id="intro-title">2026 最新版 MBTI 测试</h1>
+            <p class="intro-copy" data-intro-copy>从电影、旅行、工作、关系和审美里的微小选择出发，生成一份属于你的 2026 人格光谱。</p>
+            <div class="version-picker" aria-label="选择测试版本">
+              <button class="version-card" type="button" data-version="10">
+                <strong>10题速测</strong>
+                <span>快速生成今日人格切片</span>
+              </button>
+              <button class="version-card is-selected" type="button" data-version="28">
+                <strong>28题标准版</strong>
+                <span>平衡速度和细节</span>
+              </button>
+              <button class="version-card" type="button" data-version="46">
+                <strong>46题深测版</strong>
+                <span>更完整的人格光谱</span>
+              </button>
+            </div>
+            <button class="primary-button" type="button" data-start>
+              开始测试
+              <span aria-hidden="true">↗</span>
+            </button>
+          </div>
+          <div class="lab-strip" aria-hidden="true">
+            <span data-intro-count>28 个场景</span>
+            <span>16 型结果</span>
+            <span data-intro-time>约 3 分钟</span>
+          </div>
+          <p class="legal-note">非官方娱乐测试，不用于心理诊断、职业评估或科学结论。</p>
+        </section>
+
+        <section class="screen quiz-screen" data-screen="quiz" aria-live="polite">
+          <header class="quiz-header">
+            <button class="icon-button" type="button" data-back aria-label="返回上一题">‹</button>
+            <div class="progress-block">
+              <div class="progress-copy">
+                <span data-step>01 / 28</span>
+                <span data-mode>今日切面</span>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <i data-progress></i>
+              </div>
+            </div>
+          </header>
+
+          <article class="question-card">
+            <p class="eyebrow" data-question-kicker>Question 01</p>
+            <h2 data-question-title></h2>
+            <p class="question-help" data-question-help></p>
+            <div class="options" data-options></div>
+            <button class="primary-button next-button" type="button" data-next hidden>确认这一题</button>
+          </article>
+        </section>
+
+        <section class="screen reveal-screen" data-screen="reveal" aria-live="polite">
+          <div class="reveal-core" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="reveal-ticket">
+            <span>正在生成结果</span>
+            <strong data-reveal-type>XXXX</strong>
+            <span>人格光谱已锁定</span>
+          </div>
+        </section>
+
+        <section class="screen result-screen" data-screen="result" aria-live="polite">
+          <div class="result-hero" data-result-hero>
+            <div class="type-chip" data-role-chip>2026 Result</div>
+            <p>你的类型是</p>
+            <h2 data-result-type>INFJ</h2>
+            <strong data-result-title>深层洞察者</strong>
+            <span data-result-line></span>
+          </div>
+
+          <div class="result-content">
+            <div class="tag-row" data-result-tags></div>
+
+            <section class="dimension-panel">
+              <div class="panel-title">
+                <p class="eyebrow">你的光谱分布</p>
+                <span data-confidence>结果强度</span>
+              </div>
+              <div data-dimensions></div>
+            </section>
+
+            <section class="result-section">
+              <h3>人格解析</h3>
+              <p data-result-description></p>
+            </section>
+
+            <section class="result-section two-columns">
+              <div>
+                <h3>你的高光能力</h3>
+                <p data-result-strength></p>
+              </div>
+              <div>
+                <h3>2026 提醒</h3>
+                <p data-result-watch></p>
+              </div>
+            </section>
+
+            <section class="share-quote">
+              <p data-result-quote></p>
+            </section>
+
+            <div class="action-grid">
+              <button class="primary-button" type="button" data-save>保存结果图</button>
+              <button class="ghost-button" type="button" data-share>分享测试</button>
+            </div>
+            <button class="text-button" type="button" data-gallery-toggle>查看 16 型图鉴</button>
+            <div class="type-gallery" data-gallery hidden></div>
+            <button class="text-button" type="button" data-restart>重新测一次</button>
+            <p class="result-disclaimer">本测试为非官方娱乐内容，灵感来自人格类型文化中的常见表达。结果只适合用于自我观察和朋友间分享。</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <canvas class="share-canvas" data-canvas width="1080" height="1920" aria-hidden="true"></canvas>
+    <script src="./app.js?v=modes-20260530" defer></script>
+  </body>
+</html>
