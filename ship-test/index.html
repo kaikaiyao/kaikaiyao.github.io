@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>今夜的你，适合哪一种 Ship？</title>
+    <meta name="description" content="在夜色、讯息、边界和心动之间，测测你当下更适合哪种浪漫关系模式。">
+    <meta property="og:title" content="今夜的你，适合哪一种 Ship？">
+    <meta property="og:description" content="8 道题，看你现在适合怎样的亲密关系。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/hero.webp">
+    <meta name="theme-color" content="#111315">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <main id="app" class="app-shell">
+      <section class="screen hero-screen is-active" data-screen="intro" aria-labelledby="intro-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="ambient-lines" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="hero-content">
+          <p class="kicker">Shanghai Night Relationship Test</p>
+          <h1 id="intro-title">今夜的你，适合哪一种 Ship？</h1>
+          <p class="hero-copy">在夜色、讯息、边界和心动之间，测测你当下更适合哪种浪漫关系模式。</p>
+          <button class="primary-action" type="button" data-start>
+            开始测
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <div class="intro-ticket" aria-hidden="true">
+          <span>8 Questions</span>
+          <span>11 Ships</span>
+          <span>Tonight Only</span>
+        </div>
+      </section>
+
+      <section class="screen quiz-screen" data-screen="quiz" aria-live="polite">
+        <div class="quiz-top">
+          <button class="icon-action" type="button" data-back aria-label="返回上一题">←</button>
+          <div class="progress-wrap" aria-hidden="true">
+            <div class="progress-meta">
+              <span data-step-label>01 / 08</span>
+              <span>Night Route</span>
+            </div>
+            <div class="progress-track">
+              <span class="progress-fill" data-progress-fill></span>
+            </div>
+          </div>
+        </div>
+        <article class="question-panel">
+          <p class="question-kicker" data-question-kicker>Question 01</p>
+          <h2 data-question-title></h2>
+          <div class="option-list" data-options></div>
+        </article>
+      </section>
+
+      <section class="screen reveal-screen" data-screen="reveal" aria-live="polite">
+        <div class="reveal-ticket">
+          <span>Generating ticket</span>
+          <strong data-reveal-name>Ship</strong>
+          <span>Shanghai · Tonight</span>
+        </div>
+      </section>
+
+      <section class="screen result-screen" data-screen="result" aria-live="polite">
+        <div class="result-hero">
+          <img data-result-image alt="">
+          <div class="result-shade" aria-hidden="true"></div>
+          <div class="result-label">
+            <p>你的当前适配关系是</p>
+            <h2 data-result-title></h2>
+            <span data-result-english></span>
+          </div>
+        </div>
+        <div class="result-body">
+          <p class="result-line" data-result-line></p>
+          <div class="tag-row" data-result-tags></div>
+          <div class="result-copy">
+            <p data-result-description></p>
+            <dl>
+              <div>
+                <dt>适合的相处方式</dt>
+                <dd data-result-mode></dd>
+              </div>
+              <div>
+                <dt>温柔提醒</dt>
+                <dd data-result-reminder></dd>
+              </div>
+            </dl>
+          </div>
+          <div class="rank-panel">
+            <p>Tonight signal</p>
+            <div data-top-signals></div>
+          </div>
+          <div class="action-row">
+            <button class="primary-action compact" type="button" data-share>分享结果</button>
+            <button class="secondary-action compact" type="button" data-restart>重新测</button>
+          </div>
+          <button class="text-action" type="button" data-toggle-gallery>查看全部 ship</button>
+          <div class="ship-gallery" data-gallery hidden></div>
+        </div>
+      </section>
+    </main>
+
+    <canvas class="share-canvas" data-share-canvas width="1080" height="1920" aria-hidden="true"></canvas>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
