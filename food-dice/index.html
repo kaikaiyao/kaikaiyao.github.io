@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>MEAL POP | 开出这一餐</title>
+    <meta name="description" content="一个潮玩感 3D 食物扭蛋机。点一下，随机开出这一餐。">
+    <meta property="og:title" content="MEAL POP">
+    <meta property="og:description" content="不知道吃什么？让 3D 食物扭蛋机替你开出这一餐。">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="./assets/food-dice-hero.webp">
+    <meta name="theme-color" content="#fff8e8">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css?v=flat-pop-ui-8">
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar" aria-label="MEAL POP">
+        <a class="brand" href="./" aria-label="MEAL POP 首页">
+          <span aria-hidden="true">MP</span>
+          <strong>MEAL POP</strong>
+        </a>
+      </header>
+
+      <section class="dice-stage" aria-labelledby="page-title">
+        <div class="stage-copy">
+          <h1 id="page-title">开出这一餐</h1>
+          <p>选一点偏好，或者留空。点一下扭蛋机，让它替你决定。</p>
+        </div>
+
+        <div class="preference-board" aria-label="用餐偏好">
+          <div class="preference-row">
+            <div class="preference-label">
+              <span>菜系</span>
+            </div>
+            <div class="choice-rail cuisine-rail" data-category-rail></div>
+          </div>
+          <div class="preference-row">
+            <div class="preference-label">
+              <span>状态</span>
+            </div>
+            <div class="choice-rail mood-rail" data-filter-grid></div>
+          </div>
+        </div>
+
+        <div class="scene-shell">
+          <div class="machine-stage" data-machine-stage aria-hidden="true">
+            <div class="machine-aura"></div>
+            <div class="machine-art" data-machine-art>
+              <img class="machine-image" data-machine-image src="./assets/generated/gacha-machine-clean.webp" alt="">
+              <canvas class="machine-3d-canvas" data-machine-3d-canvas aria-hidden="true"></canvas>
+              <div class="machine-orbits" data-token-cloud></div>
+              <div class="machine-dice-cube" data-dom-dice>
+                <span data-dice-face data-value="1"></span>
+                <span data-dice-face data-value="6"></span>
+                <span data-dice-face data-value="2"></span>
+                <span data-dice-face data-value="5"></span>
+                <span data-dice-face data-value="3"></span>
+                <span data-dice-face data-value="4"></span>
+              </div>
+              <span class="machine-slot-flash"></span>
+            </div>
+          </div>
+          <canvas data-scene-canvas aria-label="3D 食物扭蛋机"></canvas>
+          <div class="scene-vignette" aria-hidden="true"></div>
+          <button class="scene-hit" type="button" data-roll aria-label="摇动食物扭蛋机"></button>
+          <div class="machine-status" data-machine-status></div>
+        </div>
+
+        <div class="active-strip" data-active-filters aria-label="当前筛选"></div>
+      </section>
+
+      <section class="result-sheet" data-result-sheet data-result-panel aria-live="polite" aria-labelledby="result-heading">
+        <div class="sheet-grabber" data-sheet-grabber>
+          <button class="sheet-handle" type="button" data-sheet-handle aria-label="展开或收起结果">
+            <span aria-hidden="true"></span>
+            <small data-sheet-hint>上拉查看</small>
+          </button>
+        </div>
+        <div class="result-kicker" hidden aria-hidden="true">
+          <span data-category>开盒结果</span>
+          <span data-roll-count>还没摇</span>
+        </div>
+        <div class="result-photo" data-result-photo hidden>
+          <img data-result-image src="" alt="" loading="lazy" decoding="async">
+        </div>
+        <h2 id="result-heading" data-result-title>点一下开盒</h2>
+        <p class="fortune-line" data-result-line>答案会从机器里弹出来。</p>
+        <div class="result-cues" data-result-cues></div>
+        <div class="backup-line">
+          <span>附近没有就试</span>
+          <strong data-result-backup>再给骰子一次机会</strong>
+        </div>
+        <div class="nudge-row" data-nudge-row hidden>
+          <button type="button" data-quick-filter="light">换清淡点</button>
+          <button type="button" data-quick-filter="bold">换重口点</button>
+          <button type="button" data-quick-filter="budget">换省钱点</button>
+        </div>
+        <div class="action-row">
+          <button class="primary-action" type="button" data-roll-again>
+            <span aria-hidden="true">↻</span>
+            再摇一次
+          </button>
+          <button class="secondary-action" type="button" data-share>
+            <span aria-hidden="true">↗</span>
+            分享结果
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <p class="toast" data-toast role="status" aria-live="polite"></p>
+    <canvas class="share-canvas" data-share-canvas width="1080" height="1440" aria-hidden="true"></canvas>
+    <script type="module" src="./app.js?v=flat-pop-ui-8"></script>
+  </body>
+</html>

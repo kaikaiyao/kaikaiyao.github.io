@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="color-scheme" content="light">
+    <meta name="theme-color" content="#fff7f0">
+    <title>测测你是哪种限量款烈酒</title>
+    <meta name="description" content="10 个不太像心理测试的问题，匹配一款真实限量烈酒。">
+    <meta property="og:title" content="测测你是哪种限量款烈酒">
+    <meta property="og:description" content="一张可爱又有点时髦的真实限量烈酒人格卡。">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles.css?v=20260529c">
+  </head>
+  <body>
+    <main id="app" class="app-shell">
+      <section class="screen intro-screen is-active" data-screen="intro" aria-labelledby="intro-title">
+        <div class="sticker-cloud" aria-hidden="true">
+          <span>Batch 10</span>
+          <span>Limited Label</span>
+          <span>No Rules</span>
+        </div>
+        <div class="intro-copy">
+          <p class="eyebrow">Pocket Bottle Personality</p>
+          <h1 id="intro-title">测测你是哪种限量款烈酒</h1>
+          <p class="intro-line">不是问你爱喝什么，而是看你会被怎样的稀缺、场面、审美和即兴打动，最后匹配一款真实限量烈酒。</p>
+          <button class="primary-action" type="button" data-start>
+            开瓶测试
+            <span aria-hidden="true">→</span>
+          </button>
+        </div>
+        <div class="hero-stage" aria-hidden="true">
+          <div class="hero-bottle">
+            <i></i>
+            <strong>LIMITED</strong>
+            <span>SPIRIT TEST</span>
+          </div>
+          <div class="hero-ticket">
+            <small>10 questions</small>
+            <b>friend-safe chaos</b>
+          </div>
+        </div>
+        <p class="fine-print">娱乐向人格小测试，不售卖酒精；未成年人请勿饮酒。</p>
+      </section>
+
+      <section class="screen quiz-screen" data-screen="quiz" aria-live="polite">
+        <header class="quiz-top">
+          <button class="icon-action" type="button" data-back aria-label="上一题">←</button>
+          <div class="progress-wrap" aria-hidden="true">
+            <div class="progress-meta">
+              <span data-step-label>01 / 10</span>
+              <span data-mode-label>single pour</span>
+            </div>
+            <div class="liquid-track"><span data-progress-fill></span></div>
+          </div>
+        </header>
+
+        <article class="question-panel">
+          <p class="eyebrow" data-question-kicker>Label 01</p>
+          <h2 data-question-title></h2>
+          <p class="question-note" data-question-note></p>
+          <div class="answer-zone" data-answer-zone></div>
+          <button class="next-action" type="button" data-next disabled>封存这一口</button>
+        </article>
+      </section>
+
+      <section class="screen mixing-screen" data-screen="mixing" aria-live="polite">
+        <div class="mixing-bottle" aria-hidden="true">
+          <span></span>
+          <i></i>
+        </div>
+        <p>正在把你的选择压成限量酒标</p>
+        <strong data-mixing-name>Limited Spirit</strong>
+      </section>
+
+      <section class="screen result-screen" data-screen="result" aria-live="polite">
+        <article class="result-card" data-result-card>
+          <div class="result-art" data-result-art aria-hidden="true"></div>
+          <div class="result-copy">
+            <p class="eyebrow">你的限量款烈酒人格是</p>
+            <h2 data-result-title></h2>
+            <p class="result-subtitle" data-result-subtitle></p>
+            <div class="tag-row" data-result-tags></div>
+            <p class="result-description" data-result-description></p>
+
+            <div class="profile-grid">
+              <section>
+                <h3>真实酒款</h3>
+                <p data-result-bottle></p>
+              </section>
+              <section>
+                <h3>适合场景</h3>
+                <p data-result-scene></p>
+              </section>
+              <section>
+                <h3>反差一句</h3>
+                <p data-result-twist></p>
+              </section>
+              <section>
+                <h3>现实灵感</h3>
+                <p><a data-result-source target="_blank" rel="noreferrer"></a></p>
+              </section>
+            </div>
+
+            <div class="axis-panel" data-axis-panel></div>
+          </div>
+        </article>
+
+        <div class="result-actions">
+          <button class="primary-action" type="button" data-share>复制测试链接</button>
+          <button class="secondary-action" type="button" data-save>保存结果卡</button>
+          <button class="secondary-action" type="button" data-restart>再测一次</button>
+        </div>
+
+        <button class="text-action" type="button" data-toggle-gallery>查看全部限量款</button>
+        <div class="gallery" data-gallery hidden></div>
+        <p class="responsible-note">本页仅作娱乐人格描述；酒款名称和图片来自品牌官方公开页面，未与任何品牌合作或背书。请理性饮酒，未成年人请勿饮酒。</p>
+      </section>
+    </main>
+    <canvas class="share-canvas" data-share-canvas width="1080" height="1600" aria-hidden="true"></canvas>
+    <script src="./app.js?v=20260529c" defer></script>
+  </body>
+</html>
