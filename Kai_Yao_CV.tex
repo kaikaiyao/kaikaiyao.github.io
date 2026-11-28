@@ -1,21 +1,22 @@
 \documentclass[10pt,a4paper]{article}
 
-\usepackage[a4paper,top=1.18cm,bottom=1.22cm,left=1.42cm,right=1.42cm,footskip=14pt]{geometry}
+\usepackage[a4paper,top=1.20cm,bottom=1.20cm,left=1.40cm,right=1.40cm]{geometry}
 \usepackage{fontspec}
 \usepackage{microtype}
+\usepackage{amsmath,amssymb}
 \usepackage{xcolor}
 \usepackage{enumitem}
 \usepackage{titlesec}
 \usepackage{tabularx}
 \usepackage{array}
-\usepackage{fancyhdr}
-\usepackage{lastpage}
 \usepackage{needspace}
 \usepackage{hyperref}
 
-% --- TYPOGRAPHY (Clean Swiss-Modern Academic Sans) ---
+% =====================================================================
+% TYPOGRAPHY (Clean Swiss-Modern Academic Sans: Avenir Next)
+% =====================================================================
 \setmainfont{Avenir Next}[
-  Scale = 0.87,
+  Scale = 0.885,
   Ligatures = TeX,
   UprightFont = * Regular,
   ItalicFont = * Italic,
@@ -23,234 +24,243 @@
   BoldItalicFont = * Demi Bold Italic
 ]
 \newfontfamily\headingfont{Avenir Next}[
-  Scale = 0.87,
+  Scale = 0.885,
   Ligatures = TeX,
   UprightFont = * Medium,
   BoldFont = * Bold
 ]
 
-% --- COLOR PALETTE (Restrained Deep Slate Navy & Engineering Blue) ---
+% =====================================================================
+% COLOR PALETTE (Restrained Deep Slate Navy & Academic Blue)
+% =====================================================================
 \definecolor{navy}{HTML}{0C2340}
 \definecolor{accent}{HTML}{005A9E}
-\definecolor{ink}{HTML}{1E242B}
-\definecolor{muted}{HTML}{52606D}
+\definecolor{tint}{HTML}{EAF2FA}
 \definecolor{rulegray}{HTML}{CFD8E3}
+\definecolor{ink}{HTML}{1D242E}
+\definecolor{muted}{HTML}{52606F}
 
 \hypersetup{
   colorlinks=true,
   urlcolor=accent,
   linkcolor=navy,
   citecolor=accent,
+  bookmarksopen=true,
+  bookmarksnumbered=false,
   pdfauthor={Kai Yao},
-  pdftitle={Kai Yao - Curriculum Vitae}
+  pdftitle={Kai Yao - Academic Curriculum Vitae}
 }
 
 \color{ink}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{1.4pt}
-\linespread{1.10}
+\linespread{1.08}
 \raggedbottom
 \hyphenpenalty=9000
 \exhyphenpenalty=7000
 \emergencystretch=2.4em
 
-% --- HEADER / FOOTER ---
-\pagestyle{fancy}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\fancyfoot[L]{\fontsize{8}{9.5}\selectfont\color{muted}Kai Yao \enspace\textbar\enspace Curriculum Vitae}
-\fancyfoot[R]{\fontsize{8}{9.5}\selectfont\color{muted}Page \thepage\ of \pageref*{LastPage}}
-\fancypagestyle{firstpage}{
-  \fancyhf{}
-  \renewcommand{\headrulewidth}{0pt}
-  \fancyfoot[L]{\fontsize{8}{9.5}\selectfont\color{muted}Kai Yao \enspace\textbar\enspace Curriculum Vitae}
-  \fancyfoot[R]{\fontsize{8}{9.5}\selectfont\color{muted}Page \thepage\ of \pageref*{LastPage}}
-}
+% =====================================================================
+% PAGE STYLE (Clean — No Headers or Footers)
+% =====================================================================
+\pagestyle{empty}
 
-% --- SECTION HEADINGS ---
+% =====================================================================
+% SECTION STYLING
+% =====================================================================
 \titleformat{\section}[block]
-  {\headingfont\fontsize{9.6}{11.2}\selectfont\bfseries\color{navy}\addfontfeature{LetterSpace=5.0}}
+  {\headingfont\fontsize{9.6}{11.2}\selectfont\bfseries\color{navy}\addfontfeature{LetterSpace=4.8}}
   {}{0pt}{\MakeUppercase}
-  [\vspace{1.6pt}{\color{navy}\titlerule[0.75pt]}]
-\titlespacing*{\section}{0pt}{10.5pt}{4.5pt}
+  [\vspace{1.8pt}{\color{navy}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{11.0pt}{4.6pt}
 
-\setlist[itemize]{leftmargin=1.14em, label={\color{accent}\rule[0.30ex]{0.25em}{0.25em}}, topsep=2.0pt, itemsep=2.4pt, parsep=0pt, partopsep=0pt}
+\setlist[itemize]{leftmargin=1.14em, label={\color{accent}\rule[0.32ex]{0.24em}{0.24em}}, topsep=2.0pt, itemsep=2.2pt, parsep=0pt, partopsep=0pt}
 
-% --- STRUCTURAL MACROS ---
+% =====================================================================
+% STRUCTURAL MACROS
+% =====================================================================
 \newcommand{\subhead}[1]{%
   \Needspace{3\baselineskip}%
-  \vspace{3.5pt}%
-  {\headingfont\fontsize{8.5}{10}\selectfont\bfseries\color{accent}\addfontfeature{LetterSpace=3.0}\MakeUppercase{#1}}\par
-  \vspace{1.5pt}%
+  \vspace{3.8pt}%
+  {\headingfont\fontsize{8.45}{10.0}\selectfont\bfseries\color{accent}\addfontfeature{LetterSpace=2.5}\MakeUppercase{#1}}\par
+  \vspace{1.8pt}%
 }
 \newcommand{\role}[4]{%
   \Needspace{4\baselineskip}%
   \vspace{2.4pt}%
-  {\headingfont\bfseries\color{navy}#1}\enspace{\color{rulegray}\textbar}\enspace{\color{ink}\textit{#2}}\hfill{\fontsize{8.5}{10}\selectfont\color{muted}#3 \enspace\textbullet\enspace #4}\par
+  {\headingfont\bfseries\color{navy}#1}\enspace{\color{rulegray}\textbar}\enspace{\color{ink}\textit{#2}}\hfill{\fontsize{8.45}{10.0}\selectfont\color{muted}#3 \enspace\textbullet\enspace #4}\par
 }
 \newcommand{\edu}[4]{%
   \Needspace{2\baselineskip}%
-  \vspace{2.0pt}%
-  {\headingfont\bfseries\color{navy}#1}\enspace{\color{rulegray}\textbar}\enspace{#2}\hfill{\fontsize{8.5}{10}\selectfont\color{muted}#3}\par
+  \vspace{3.0pt}%
+  {\headingfont\bfseries\color{navy}#1}\enspace{\color{rulegray}\textbar}\enspace{#2}\hfill{\fontsize{8.5}{10.0}\selectfont\color{muted}#3}\par
   \if\relax\detokenize{#4}\relax\else
-    \vspace{-0.2pt}%
-    {\fontsize{8.45}{10.4}\selectfont\color{muted}#4}\par
+    \vspace{0.4pt}%
+    {\fontsize{8.5}{10.6}\selectfont\color{muted}#4}\par
   \fi
 }
 \newcommand{\publink}[2]{\href{#1}{\fontsize{8.0}{9.4}\selectfont\color{accent}[#2]}}
-\newcommand{\cofirst}{\raisebox{0.35ex}{\fontsize{6.5}{7}\selectfont *}}
-\newcommand{\sqbullet}{{\color{accent}\rule[0.30ex]{0.25em}{0.25em}}}
+\newcommand{\cofirst}{\raisebox{0.35ex}{\fontsize{6.6}{7}\selectfont *}}
+\newcommand{\sqbullet}{{\color{accent}\rule[0.32ex]{0.24em}{0.24em}}}
 
 \begin{document}
-\thispagestyle{firstpage}
 
-% --- EXECUTIVE TWO-COLUMN MASTHEAD ---
-\noindent\begin{minipage}[b]{0.60\textwidth}
-{\headingfont\fontsize{22}{25}\selectfont\bfseries\color{navy}Kai Yao}\\[2.8pt]
-{\headingfont\fontsize{9.9}{12}\selectfont\bfseries\color{accent}AI Researcher \& Engineer}\\[1.6pt]
-{\fontsize{8.65}{10.5}\selectfont\color{muted}Secure \& Trustworthy ML \enspace\textbullet\enspace Generative-Model Provenance \enspace\textbullet\enspace ML Systems}\\[1.3pt]
-{\fontsize{8.45}{10.3}\selectfont\color{muted}PhD Viva Passed (Oct 2026), University of Edinburgh \enspace\textbullet\enspace Expected Conferral Dec 2026}
-\end{minipage}\hfill%
-\begin{minipage}[b]{0.38\textwidth}\raggedleft\fontsize{8.5}{10.7}\selectfont
-\href{mailto:kai.yao@ed.ac.uk}{kai.yao@ed.ac.uk} \enspace{\color{rulegray}\textbar}\enspace \href{mailto:kaiyao17@gmail.com}{kaiyao17@gmail.com}\\[1.3pt]
-+86 17302151562 \enspace{\color{rulegray}\textbar}\enspace +44 7867 763608\\[1.3pt]
-\href{https://kaikaiyao.github.io}{kaikaiyao.github.io} \enspace{\color{rulegray}\textbar}\enspace \href{https://github.com/kaikaiyao}{github.com/kaikaiyao}\\[1.3pt]
-\href{https://www.linkedin.com/in/kai-yao-ai-algorithm/}{LinkedIn} \enspace{\color{rulegray}\textbar}\enspace \href{https://scholar.google.com/citations?user=Qah0vJkAAAAJ}{Google Scholar}
-\end{minipage}
+% --- CLEAN 4-LINE ACADEMIC MASTHEAD ---
+{\headingfont\fontsize{22.5}{26}\selectfont\bfseries\color{navy}Kai Yao}\\[3.8pt]
+{\headingfont\fontsize{9.9}{12.2}\selectfont\bfseries\color{accent}AI Researcher}\\[2.6pt]
+{\fontsize{8.7}{10.6}\selectfont\color{muted}Secure \& Trustworthy AI \enspace\textbullet\enspace AI Governance \enspace\textbullet\enspace AI for Science}\\[2.6pt]
+{\fontsize{8.7}{10.6}\selectfont\href{mailto:kai.yao@ed.ac.uk}{kai.yao@ed.ac.uk} \enspace{\color{rulegray}\textbar}\enspace +86 17302151562 \enspace{\color{rulegray}\textbar}\enspace \href{https://kaikaiyao.github.io}{kaikaiyao.github.io}}
 
-\vspace{4.8pt}
-{\color{navy}\hrule height 1.0pt}
+\vspace{2.5pt}
 
 % --- RESEARCH PROFILE ---
+\pdfbookmark[1]{Research Profile}{bm-profile}
 \section*{Research Profile}
-I am an AI researcher specializing in secure and trustworthy machine learning, generative-model provenance, post-deployment model auditing, and ML systems. My doctoral work integrates statistical theory, adaptive threat modelling, and reproducible large-scale benchmarking to characterize when provenance and attribution methods remain reliable under realistic editing and deployment changes, alongside work on privacy-induced unfairness and AI governance. Prior full-time industry engineering at Intel and Huawei and scientific-imaging research at Johns Hopkins ground this work in deployable systems.
+I am an AI researcher specializing in secure and trustworthy artificial intelligence, with a primary focus on AIGC content provenance, post-deployment model auditing, adversarial robustness, and AI governance. My doctoral research at the University of Edinburgh combines statistical theory, adaptive threat modelling, and large-scale empirical evaluation to establish when passive provenance, watermarking, and output-only auditing remain reliable under realistic editing, silent model substitutions, and adversarial verification interfaces, alongside work on privacy-induced unfairness and AI-mediated education. In addition, my interdisciplinary work in AI for Science applies deep learning and quantitative microscopy to label-free single-cell measurement.
 
 % --- EDUCATION ---
+\pdfbookmark[1]{Education}{bm-edu}
 \section*{Education}
-\edu{University of Edinburgh}{PhD in Cyber Security, Privacy and Trust (Full PhD Scholarship)}{May 2023 – Dec 2026 (expected)}{PhD viva passed Oct 2026; formal degree conferral expected Dec 2026. School of Informatics, Edinburgh, UK; Advisor: Dr.\ Marc Juarez.}
-\edu{Johns Hopkins University}{MS in Mechanical Engineering (Departmental Research Fellowship)}{Sep 2017 – May 2020}{Applied deep learning, computer vision, and quantitative microscopy for single-cell measurement. Baltimore, MD, USA.}
-\edu{Fudan University}{BS in Theoretical and Applied Mechanics (Outstanding Graduate of the Year)}{Sep 2012 – Jun 2017}{Computational mechanics and finite-element physical modelling. Shanghai, China.}
-\edu{Osaka University}{Undergraduate Exchange Student (Japanese Government JASSO Full Scholarship)}{2014 – 2015}{One-year non-degree exchange programme in engineering. Osaka, Japan.}
+\edu{University of Edinburgh}{PhD \enspace{\color{rulegray}\textbar}\enspace Cyber Security, Privacy and Trust}{2023 -- 2026 (expected)}{PhD defense passed Oct 2026; expected degree conferral Dec 2026. Advisor: Dr.\ Marc Juarez.\\Thesis title: \textit{Toward Trustworthy Image Provenance: Evaluating and Strengthening Robustness under Adversarial Conditions}}
+\vspace{2.0pt}
+\edu{Johns Hopkins University}{MS \enspace{\color{rulegray}\textbar}\enspace Mechanical Engineering}{2020}{}
+\vspace{2.0pt}
+\edu{Fudan University}{BS \enspace{\color{rulegray}\textbar}\enspace Theoretical and Applied Mechanics}{2017}{}
+
+% --- ACADEMIC SERVICE ---
+\pdfbookmark[1]{Academic Service}{bm-service}
+\section*{Academic Service}
+\renewcommand{\arraystretch}{1.08}
+\begin{tabularx}{\textwidth}{@{}>{\leavevmode\headingfont\bfseries\color{navy}\raggedright\arraybackslash\fontsize{8.45}{10.0}\selectfont}p{3.25cm} >{\raggedright\arraybackslash}X@{}}
+Program Committee & IEEE Conference on Secure and Trustworthy Machine Learning (\textbf{SaTML 2027}); ACM Workshop on Artificial Intelligence and Security (\textbf{AISec 2026}) \\
+Peer Reviewer & AAAI Conference on Artificial Intelligence (\textbf{AAAI-26, AAAI-27}); Privacy Enhancing Technologies Symposium (\textbf{PETS/PoPETs 2027}); ACM Digital Threats: Research and Practice (\textbf{DTRAP})
+\end{tabularx}
+\renewcommand{\arraystretch}{1.0}
 
 % --- PUBLICATIONS ---
+\pdfbookmark[1]{Publications and Preprints}{bm-pubs}
 \section*{Publications and Preprints}
-{\fontsize{8.1}{9.4}\selectfont\color{muted}\textit{Note: \cofirst denotes equal contribution / co-first authorship.}}
+{\fontsize{8.35}{10.5}\selectfont\color{muted}\textbf{Summary:} 7 first-author papers at top venues in Secure \& Trustworthy AI and AI Governance during PhD (NeurIPS $\times$2, IEEE SaTML $\times$2, AAAI/ACM AIES $\times$2, ACM AISec $\times$1); 4 first-author papers in biology journals during MS. \textit{\cofirst denotes equal contribution.}}
 
-\subhead{Peer-Reviewed Conference and Workshop Publications in AI \& Machine Learning}
-\begin{enumerate}[label={\fontsize{8.1}{9.5}\selectfont\color{muted}\headingfont[C\arabic*]}, leftmargin=2.3em, labelsep=0.55em, topsep=1.8pt, itemsep=3.0pt, parsep=0pt]
+\subhead{Peer-Reviewed Conference and Workshop Publications in AI, Machine Learning \& Security}
+\begin{enumerate}[label={\fontsize{8.2}{9.7}\selectfont\color{muted}\headingfont[C\arabic*]}, leftmargin=2.3em, labelsep=0.55em, topsep=3.0pt, itemsep=4.2pt, parsep=0pt]
   \item \textbf{Yao K}, Juarez M. \textit{FARE: Forensic Acceptance Region Estimation for Catching Bait-and-Switch Image Generators.} Advances in Neural Information Processing Systems (\textbf{NeurIPS}), 2026. \mbox{\publink{https://arxiv.org/abs/2609.30982}{arXiv}\;\publink{https://github.com/kaikaiyao/FARE}{Code}}
   \item \textbf{Yao K}. \textit{Can Pixels Alone Reveal Image Origin? Minimax Limits and Learnable Interfaces for Passive Provenance.} Advances in Neural Information Processing Systems (\textbf{NeurIPS}), 2026. \mbox{\publink{https://arxiv.org/abs/2609.30997}{arXiv}\;\publink{https://github.com/kaikaiyao/pixels-alone-provenance}{Code}}
   \item \textbf{Yao K}\cofirst, Szil\'{a}gyi B\cofirst, Kamp S, Po\'{o}r M, Szilveszter M, Zsoldos MK, Juarez M. \textit{What Breaks Local Watermarks? A Robustness Benchmark for Local Invisible Image Watermarking.} ACM Workshop on Artificial Intelligence and Security (\textbf{AISec}), 2026. \publink{https://arxiv.org/abs/2609.16832}{arXiv}
-  \item \textbf{Yao K}, Juarez M. \textit{Smudged Fingerprints: A Systematic Evaluation of the Robustness of AI Image Fingerprints.} 4th IEEE Conference on Secure and Trustworthy Machine Learning (\textbf{SaTML}), 2026 (Oral). \mbox{\publink{https://arxiv.org/abs/2512.11771}{arXiv}\;\publink{https://github.com/kaikaiyao/SmudgedFingerprints}{Code}}
+  \item \textbf{Yao K}, Juarez M. \textit{Smudged Fingerprints: A Systematic Evaluation of the Robustness of AI Image Fingerprints.} 4th IEEE Conference on Secure and Trustworthy Machine Learning (\textbf{SaTML}), 2026. \mbox{\publink{https://arxiv.org/abs/2512.11771}{arXiv}\;\publink{https://github.com/kaikaiyao/SmudgedFingerprints}{Code}}
   \item \textbf{Yao K}. \textit{What Does the Credential Still Certify? Cognitive Stewardship for AI-Mediated Education.} 9th AAAI/ACM Conference on AI, Ethics, and Society (\textbf{AIES}), 2026. \publink{https://arxiv.org/abs/2607.19988}{arXiv}
   \item \textbf{Yao K}. \textit{When AI Does the Work, What Is Learning For? Post-Instrumental Learning and the Risk of Capacity Dissolution.} 9th AAAI/ACM Conference on AI, Ethics, and Society (\textbf{AIES}), 2026. \publink{https://arxiv.org/abs/2607.28041}{arXiv}
-  \item \textbf{Yao K}, Juarez M. \textit{SoK: What Makes Private Learning Unfair?} 3rd IEEE Conference on Secure and Trustworthy Machine Learning (\textbf{SaTML}), 2025 (Oral). \mbox{\publink{https://ieeexplore.ieee.org/document/10992380}{IEEE}\;\publink{https://arxiv.org/abs/2501.14414}{arXiv}}
+  \item \textbf{Yao K}, Juarez M. \textit{SoK: What Makes Private Learning Unfair?} 3rd IEEE Conference on Secure and Trustworthy Machine Learning (\textbf{SaTML}), 2025. \mbox{\publink{https://ieeexplore.ieee.org/document/10992380}{IEEE}\;\publink{https://arxiv.org/abs/2501.14414}{arXiv}}
 \end{enumerate}
 
 \subhead{Preprints}
-\begin{enumerate}[label={\fontsize{8.1}{9.5}\selectfont\color{muted}\headingfont[P\arabic*]}, leftmargin=2.3em, labelsep=0.55em, topsep=1.8pt, itemsep=2.2pt, parsep=0pt]
+\begin{enumerate}[label={\fontsize{8.15}{9.6}\selectfont\color{muted}\headingfont[P\arabic*]}, leftmargin=2.3em, labelsep=0.55em, topsep=2.6pt, itemsep=2.5pt, parsep=0pt]
   \item \textbf{Yao K}, Juarez M. \textit{SPRINT: Robust Model Attribution of Generated Images via Secret Pixel Reconstruction.} \\ Preprint, arXiv:2508.05691, 2026. \publink{https://arxiv.org/abs/2508.05691}{arXiv}
 \end{enumerate}
 
 \newpage
-\titlespacing*{\section}{0pt}{9.2pt}{4.0pt}
+\linespread{1.035}\selectfont
+\titlespacing*{\section}{0pt}{6.2pt}{2.8pt}
 
 % --- PUBLICATIONS CONTINUED ---
 \section*{Publications (Continued)}
 \subhead{Peer-Reviewed Journal Publications in AI for Science \& Biomedical Engineering}
-\begin{enumerate}[label={\fontsize{8.1}{9.5}\selectfont\color{muted}\headingfont[J\arabic*]}, leftmargin=2.3em, labelsep=0.55em, topsep=1.8pt, itemsep=2.8pt, parsep=0pt]
+\begin{enumerate}[label={\fontsize{8.1}{9.5}\selectfont\color{muted}\headingfont[J\arabic*]}, leftmargin=2.3em, labelsep=0.55em, topsep=1.2pt, itemsep=1.6pt, parsep=0pt]
   \item Rochman ND\cofirst, \textbf{Yao K}\cofirst, Perez-Gonzalez NA\cofirst, Wirtz D, Sun SX. \textit{Single-Cell Volume Measurement Utilizing the Fluorescence Exclusion Method (FXm).} \textit{Bio-protocol}, 10(12):e3652, 2020. \publink{https://bio-protocol.org/en/bpdetail?id=3652&type=0}{DOI}
   \item \textbf{Yao K}\cofirst, Rochman ND\cofirst, Sun SX. \textit{CTRL: A Label-Free Artificial Intelligence Method for Dynamic Measurement of Single-Cell Volume.} \textit{Journal of Cell Science}, 133(7):jcs245050, 2020. \publink{https://journals.biologists.com/jcs/article/133/7/jcs245050/224905/CTRL-a-label-free-artificial-intelligence-method}{Journal}
-  \item Perez-Gonzalez NA\cofirst, Rochman ND\cofirst, \textbf{Yao K}\cofirst, et al. \textit{YAP and TAZ Regulate Cell Volume.} \textit{Journal of Cell Biology}, 218(10):3472–3488, 2019. \publink{https://rupress.org/jcb/article/218/10/3472/120715/YAP-and-TAZ-regulate-cell-volumeYAP-and-TAZ}{Journal}
-  \item \textbf{Yao K}\cofirst, Rochman ND\cofirst, Sun SX. \textit{Cell Type Classification and Unsupervised Morphological Phenotyping from Low-Resolution Images Using Deep Learning.} \textit{Scientific Reports}, 9(1):1–13, 2019. \publink{https://www.nature.com/articles/s41598-019-50010-9}{Journal}
-  \item Zhang Q, Meng Z, Zhang Y, \textbf{Yao K}, et al. \textit{Phantom-Based Experimental Validation of Fast Virtual Deployment of Self-Expandable Stents for Cerebral Aneurysms.} \textit{BioMedical Engineering OnLine}, 15(2):431–437, 2016. \publink{https://europepmc.org/article/pmc/5260011}{Paper}
+  \item Perez-Gonzalez NA\cofirst, Rochman ND\cofirst, \textbf{Yao K}\cofirst, et al. \textit{YAP and TAZ Regulate Cell Volume.} \textit{Journal of Cell Biology}, 218(10):3472--3488, 2019. \publink{https://rupress.org/jcb/article/218/10/3472/120715/YAP-and-TAZ-regulate-cell-volumeYAP-and-TAZ}{Journal}
+  \item \textbf{Yao K}\cofirst, Rochman ND\cofirst, Sun SX. \textit{Cell Type Classification and Unsupervised Morphological Phenotyping from Low-Resolution Images Using Deep Learning.} \textit{Scientific Reports}, 9(1):1--13, 2019. \publink{https://www.nature.com/articles/s41598-019-50010-9}{Journal}
+  \item Zhang Q, Meng Z, Zhang Y, \textbf{Yao K}, et al. \textit{Phantom-Based Experimental Validation of Fast Virtual Deployment of Self-Expandable Stents for Cerebral Aneurysms.} \textit{BioMedical Engineering OnLine}, 15(2):431--437, 2016. \publink{https://europepmc.org/article/pmc/5260011}{Paper}
 \end{enumerate}
 
-% --- RESEARCH EXPERIENCE ---
-\section*{Research Experience}
+% --- RESEARCH ACHIEVEMENTS & EXPERIENCE ---
+\pdfbookmark[1]{Research Achievements & Experience}{bm-research}
+\section*{Research Achievements \& Major Research Projects}
 
-\role{University of Edinburgh}{PhD Researcher, School of Informatics}{Edinburgh, UK}{May 2023 – Present}
-\begin{itemize}
-  \item \textbf{Post-Deployment Auditing \& Statistical Limits (NeurIPS 2026):} Developed \textit{FARE}, an output-only black-box audit learning patch-level acceptance regions from certified generator outputs to flag model, checkpoint, and pipeline substitutions (\textbf{92.6\%–99.5\%} mean TPR at \textbf{1\%} FPR; \textbf{92.4\%–99.4\%} under white-box PGD attacks). Established minimax total-variation limits on passive provenance under editing and analyzed verifier-interface leakage enabling surrogate evasion (\textit{Can Pixels Alone?}).
-  \item \textbf{Adversarial Evaluation of Fingerprints \& Local Watermarks (IEEE SaTML 2026 Oral; ACM AISec 2026):} Formalized white-box and black-box removal and forgery threat models, benchmarking \textbf{14 fingerprinting methods across 12 GAN/VAE/diffusion generators} under 5 attack strategies; co-developed a \textbf{55-transformation benchmark} decoupling spatial localization from payload recovery for local invisible image watermarks.
-  \item \textbf{Keyed Attribution, Fairness \& AI Governance (Preprint; SaTML 2025 Oral; AIES 2026):} Designed \textit{SPRINT}, a keyed passive-attribution method using verifier-held pixel-reconstruction targets (\textbf{98.83\%} clean accuracy; \textbf{<1\%} adaptive attack success with private keys); systematized 20 differential-privacy fairness studies into a four-layer taxonomy; formulated a capability framework and audited 30 university AI policies across four open-weight LLMs.
+\role{University of Edinburgh}{PhD Researcher, School of Informatics}{Edinburgh, UK}{2023 -- Present}
+\begin{itemize}[itemsep=1.7pt]
+  \item \textbf{Output-Only Model Auditing \& Keyed Passive Attribution (\textit{NeurIPS} 2026):} Commercial AI services can silently swap a certified generator for a cheaper or degraded model after deployment, while adaptive attackers can evade public detectors. Developed \textit{FARE} to catch hidden model, checkpoint, quantization, pruning, and step-reduction swaps from outputs alone without accessing weights (92.6\%--99.5\% single-image TPR at 1\% FPR; 92.6\% vs.\ 18.3\% best baseline on Stable Diffusion; 98.8\%--99.5\% small-batch TPR at 0.1\% FPR; 92.4\%--99.4\% under white-box PGD). Complementarily designed \textit{SPRINT}, assigning verifier-held secret pixel targets to attribute six generators at 98.83\% clean accuracy while holding offline adaptive evasion below 1\%.
+  \item \textbf{Fundamental Statistical \& Interface Limits of Passive Provenance (\textit{NeurIPS} 2026):} Answered a foundational question—whether image pixels alone can reliably certify origin after everyday editing. Proved a two-barrier minimax framework establishing (i) the image-only total-variation separability ceiling ($\Delta_{s,t}$) beyond which no detector can succeed under editing, and (ii) how score-revealing public APIs leak enough signal for surrogate evasion—showing that low-bandwidth abstention lowers evaluated CLIP attack success from 1.00 to 0.00--0.09.
+  \item \textbf{Adversarial Security Benchmarks for Fingerprints \& Local Watermarks (\textit{IEEE SaTML} 2026; \textit{ACM AISec} 2026):} Built a unified white-box and black-box removal/forgery evaluation across 14 fingerprinting methods and 12 GAN/VAE/diffusion generators, revealing that existing fingerprints can be stripped at >80\% white-box and >50\% black-box success (covered by University of Edinburgh News, DIGIT, and Herald Scotland). Co-developed a 55-transformation local-watermark benchmark (4 datasets, 5 methods) separating localization failure from payload failure under cropping, geometric distortion, and generative editing.
+  \item \textbf{Trustworthy AI, Privacy Fairness \& AI Governance (\textit{IEEE SaTML} 2025; \textit{AAAI/ACM AIES} 2026 $\times$ 2):} Examined unintended societal harms in deployed AI. Systematized 20 differential-privacy fairness studies into a four-layer causal taxonomy explaining why privacy protection degrades subgroup accuracy unevenly; authored two \textit{AIES} papers defining cognitive stewardship in AI-mediated education alongside an automated audit of 30 university AI policies across four open-weight LLMs.
 \end{itemize}
 
-\role{Johns Hopkins University}{Graduate Researcher, Quantitative Biology \& Deep Learning}{Baltimore, MD, USA}{2018 – 2020}
-\begin{itemize}
-  \item Built label-free deep learning pipelines combining differential interference contrast microscopy preprocessing, U-Net/CNN training, and microfluidic fluorescence-exclusion ground truth for single-cell classification, unsupervised morphological phenotyping, and dynamic volume prediction (\textit{CTRL}, \textbf{<6\%} MAE across biological repeats).
-  \item Demonstrated cross-flask domain shift in live-cell classification and worked with experimentalists to lift unseen-batch generalization via multi-flask mixed training (\textit{Scientific Reports}, 2019).
+\role{Johns Hopkins University}{Graduate Researcher, Quantitative Biology \& Deep Learning}{Baltimore, MD, USA}{2017 -- 2020}
+\begin{itemize}[itemsep=1.9pt]
+  \item \textbf{Label-Free Single-Cell Measurement (\textit{CTRL}, \textit{J.\ Cell Sci.}\ 2020; \textit{J.\ Cell Biol.}\ 2019; \textit{Bio-protocol} 2020):} Measuring live single-cell volume normally requires invasive fluorescent dyes. Paired standard optical microscopy with microfluidic physical ground truth to train U-Net models predicting dynamic cell volume directly from single label-free images (<6\% MAE across biological repeats), supporting biological discovery of YAP/TAZ cell-volume regulation.
+  \item \textbf{Cross-Batch Generalization in Live-Cell Imaging (\textit{Scientific Reports}, 2019):} Demonstrated that standard within-flask splits (>95\% accuracy) conceal severe cross-batch shift on unseen culture flasks, and introduced multi-flask mixed training with unsupervised morphological phenotyping to lift unseen-batch accuracy up to 80\%.
 \end{itemize}
 
-\role{Fudan University}{Undergraduate Researcher, Biomedical Mechanics}{Shanghai, China}{2015 – 2017}
-\begin{itemize}
-  \item Contributed to finite-element virtual deployment modelling of self-expandable cerebral aneurysm stents and quantitative comparison against physical vessel phantom experiments.
-\end{itemize}
+% --- INDUSTRY R&D EXPERIENCE ---
+\pdfbookmark[1]{Industry R&D Experience}{bm-industry}
+\section*{Industry R\&D Experience}
 
-% --- INDUSTRY EXPERIENCE ---
-\section*{Industry Experience}
+\role{Intel Corp.\ \& Huawei Technologies}{AI Frameworks Engineer / AI Algorithm Engineer}{Shanghai, China}{2020 -- 2023}
+\vspace{1.6pt}
+\textbf{Intel Corp.\ (AI Frameworks Engineer, AIA, Shanghai):} Led \textit{Neural Coder} inside open-source \href{https://github.com/intel/neural-compressor/commits?author=kaikaiyao}{Intel Neural Compressor} (40 upstream commits), pairing Python static analysis with automated benchmarking to inject inspectable PyTorch optimizations; co-delivered VS Code and JupyterLab extensions featured in Intel's \textit{Innovation 2022} CEO keynote (10$\times$+ ResNet50 speedup on 4th Gen Xeon). Built a Shell/Python and CI bare-metal benchmarking pipeline (throughput, latency, Acc/F1 in MySQL) with PyTorch Profiler and led a Gradio-based nightly dashboard for cross-team collaboration with IPEX teams; contributed to validation and development of INC PyTorch quantization and IPEX (18 HF tasks, $\approx$1.7$\times$ speedup, <1\% drop; Stable Diffusion CPU), partnered with Alibaba Cloud (PAI-DSW cloud IDE) and AWS (Amazon SageMaker AI), and co-authored \href{https://kaikaiyao.github.io/intel/}{four Intel technical articles}.
 
-\role{Intel Corp.}{AI Frameworks Engineer}{Shanghai, China}{Jun 2021 – Apr 2023}
-\begin{itemize}
-  \item \textbf{Neural Coder Technical Lead:} Architected and led Neural Coder in open-source \href{https://github.com/intel/neural-compressor/commits?author=kaikaiyao}{Intel Neural Compressor} (40 upstream commits), pairing Python static program analysis (syntax, type inference, call graphs) with automated benchmarking to inject inspectable PyTorch optimizations; co-delivered JupyterLab and VS Code extensions and featured in Intel's \textit{Innovation 2022} CEO keynote (\textbf{10×+} ResNet50 speedup on 4th Gen Xeon).
-  \item \textbf{Quantization, Cloud Co-Engineering \& Generative AI:} Built PyTorch adapters and INT8 quantization workflows in Intel Neural Compressor and IPEX, enabling Optimum Intel across \textbf{18 Hugging Face Transformers tasks} (\textbf{≈1.7×} speedup on 3rd Gen Xeon, typically \textbf{<1\%} accuracy drop) and accelerating Stable Diffusion on Intel CPU; partnered with \textbf{Alibaba Cloud} (PAI-DSW) and \textbf{AWS} and co-authored \href{https://kaikaiyao.github.io/intel/}{four Intel Analytics Software technical articles}.
-\end{itemize}
-
-\role{Huawei Technologies Co., Ltd.}{AI Algorithm Engineer}{Shanghai, China}{Oct 2020 – Jun 2021}
-\begin{itemize}
-  \item Designed, tuned, and compressed CNN and RNN algorithms for 5G MU-MIMO wireless systems under production latency and hardware budgets, partnering with deployment and validation teams to integrate and verify 5G features.
-\end{itemize}
+\vspace{2.4pt}
+\textbf{Huawei Technologies Co., Ltd.\ (AI Algorithm Engineer, 5G Solutions Dept.\@, Shanghai):} Designed, tuned, and compressed CNN and RNN algorithms for 5G MU-MIMO wireless systems under production latency, throughput, and hardware constraints, partnering with deployment and validation teams for end-to-end 5G integration.
 
 \newpage
-\titlespacing*{\section}{0pt}{11.5pt}{4.8pt}
+\linespread{1.11}\selectfont
+\titlespacing*{\section}{0pt}{13.0pt}{5.2pt}
 
-% --- TALKS & MEDIA ---
+% --- RESEARCH AGENDA ---
+\pdfbookmark[1]{Research Agenda}{bm-agenda}
+\section*{Research Agenda}
+My ongoing and future research focuses on trustworthy visual content provenance (images and video), connecting theoretical bounds, system-level design, and actionable AI governance:
+\begin{itemize}[itemsep=3.2pt]
+  \item \textbf{Real-World Benchmarking \& Application-Dependent Visual Provenance:} Stress-test deployed industry watermarks (e.g., \mbox{SynthID}) and extend image benchmarks to video (temporal compression, cross-frame edits); design application-dependent provenance schemes for task-specific trade-offs across robustness, imperceptibility, capacity, and false-positive budgets.
+  \item \textbf{System-Level Provenance (C2PA + Watermarking + Fingerprinting):} Co-design layered architectures combining C2PA metadata, active watermarking, and passive fingerprinting/auditing (\textit{FARE}, \textit{SPRINT}) to resist metadata stripping and re-encoding.
+  \item \textbf{Agentic-AI-Driven Provenance Offense \& Defense:} Study autonomous multi-step editing and interface-probing agents against visual provenance detectors, paired with low-bandwidth abstention interfaces (\textit{Can Pixels Alone?}) and adaptive verification.
+  \item \textbf{Provenance Governance \& Policy Alignment:} Bridge technical limits with AI regulation and evidentiary standards (\textit{AIES '26}; IP/legal outreach), translating statistical error bounds and fixed-FPR calibration into actionable compliance frameworks.
+\end{itemize}
+
+% --- INVITED TALKS & MEDIA ---
+\pdfbookmark[1]{Talks, Teaching & Honors}{bm-talks}
+\Needspace{6\baselineskip}
 \section*{Invited Talks, Presentations \& Media Coverage}
 \renewcommand{\arraystretch}{1.20}
-\begin{tabularx}{\textwidth}{@{}>{\leavevmode}l@{\hspace{0.58em}} >{\raggedright\arraybackslash}X @{\hspace{1.2em}} r@{}}
-\sqbullet & \textit{Fingerprinting AI Models in a Black-Box Setting.} Invited keynote, Kraus \& Lederer Law Firm (Munich), on model attribution and IP protection & \fontsize{8.5}{10}\selectfont\color{muted}2026 \\
-\sqbullet & \textit{Smudged Fingerprints: A Systematic Evaluation of the Robustness of AI Image Fingerprints.} Oral presentation, IEEE SaTML & \fontsize{8.5}{10}\selectfont\color{muted}2026 \\
-\sqbullet & \textit{Image Provenance in the AI Era.} Guest lecture, graduate course \textit{Privacy and Security with Machine Learning}, University of Edinburgh \publink{https://kaikaiyao.github.io/guest-lecture-slides/}{Slides} & \fontsize{8.5}{10}\selectfont\color{muted}2026 \\
-\sqbullet & \textit{SoK: What Makes Private Learning Unfair?} Oral presentation, IEEE SaTML (Copenhagen) & \fontsize{8.5}{10}\selectfont\color{muted}2025 \\
-\sqbullet & \textit{Algorithmic Unfairness in Private Classifiers.} University of Edinburgh Cyber Security, Privacy \& Trust Research Showcase & \fontsize{8.5}{10}\selectfont\color{muted}2024 \\
-\sqbullet & \textbf{Media Coverage:} \textit{Smudged Fingerprints} featured by University of Edinburgh News, DIGIT, and Herald Scotland & \fontsize{8.5}{10}\selectfont\color{muted}2026
+\begin{tabularx}{\textwidth}{@{}>{\leavevmode}l@{\hspace{0.55em}} >{\raggedright\arraybackslash}X @{\hspace{1.0em}} r@{}}
+\sqbullet & \textit{Fingerprinting AI Models in a Black-Box Setting.} Invited keynote, Kraus \& Lederer Law Firm (Munich), on model IP & \fontsize{8.35}{9.8}\selectfont\color{muted}2026 \\
+\sqbullet & \textit{Smudged Fingerprints: A Systematic Evaluation of the Robustness of AI Image Fingerprints.} Presentation, IEEE SaTML & \fontsize{8.35}{9.8}\selectfont\color{muted}2026 \\
+\sqbullet & \textit{Image Provenance in the AI Era.} Guest lecture, \textit{Privacy and Security with Machine Learning}, Univ.\ of Edinburgh \publink{https://kaikaiyao.github.io/guest-lecture-slides/}{Slides} & \fontsize{8.35}{9.8}\selectfont\color{muted}2026 \\
+\sqbullet & \textit{SoK: What Makes Private Learning Unfair?} Presentation, IEEE SaTML (Copenhagen) & \fontsize{8.35}{9.8}\selectfont\color{muted}2025 \\
+\sqbullet & \textit{Algorithmic Unfairness in Private Classifiers.} University of Edinburgh Cyber Security, Privacy \& Trust Research Showcase & \fontsize{8.35}{9.8}\selectfont\color{muted}2024 \\
+\sqbullet & \textbf{Media Coverage:} \textit{Smudged Fingerprints} featured by University of Edinburgh News, DIGIT, and Herald Scotland & \fontsize{8.35}{9.8}\selectfont\color{muted}2026
 \end{tabularx}
 
 % --- TEACHING & MENTORING ---
-\section*{Teaching \& Mentoring}
-\begin{tabularx}{\textwidth}{@{}>{\leavevmode}l@{\hspace{0.58em}} >{\raggedright\arraybackslash}X @{\hspace{1.2em}} r@{}}
-\sqbullet & \textbf{Guest Lecturer}, \textit{Privacy and Security with Machine Learning} (graduate), University of Edinburgh & \fontsize{8.5}{10}\selectfont\color{muted}2025 – 2026 \\
-\sqbullet & \textbf{Teaching Assistant \& Lab Demonstrator}, \textit{Privacy and Security with Machine Learning}, University of Edinburgh & \fontsize{8.5}{10}\selectfont\color{muted}2023 – 2025 \\
-\sqbullet & \textbf{Teaching Assistant}, \textit{Mathematical and Computational Image Analysis}, Johns Hopkins University & \fontsize{8.5}{10}\selectfont\color{muted}2019 – 2020 \\
-\sqbullet & \multicolumn{2}{@{}p{\dimexpr\textwidth-1.05em\relax}@{}}{\raggedright\textbf{Research Mentoring:} Mentored five undergraduate and postgraduate researchers across Johns Hopkins and Edinburgh: Felipe Takaesu, Eliana Crentsil, Lucia Sablich, Shannon Flanary, and Chunhan Fang.}
-\end{tabularx}
-
-% --- ACADEMIC SERVICE ---
-\section*{Academic Service}
-\begin{tabularx}{\textwidth}{@{}>{\leavevmode\headingfont\bfseries\color{navy}\raggedright\arraybackslash\fontsize{8.5}{10}\selectfont}p{3.35cm} >{\raggedright\arraybackslash}X@{}}
-Program Committee & IEEE Conference on Secure and Trustworthy Machine Learning (SaTML 2027); ACM Workshop on Artificial Intelligence and Security (AISec 2026) \\
-Reviewer & AAAI Conference on Artificial Intelligence (AAAI-26, AAAI-27); Privacy Enhancing Technologies Symposium (PETS/PoPETs 2027); ACM Digital Threats: Research and Practice (DTRAP)
+\Needspace{6\baselineskip}
+\section*{Teaching, Course Readiness \& Research Mentoring}
+\begin{tabularx}{\textwidth}{@{}>{\leavevmode}l@{\hspace{0.55em}} >{\raggedright\arraybackslash}X @{\hspace{1.0em}} r@{}}
+\sqbullet & \textbf{Guest Lecturer}, \textit{Privacy and Security with Machine Learning} (graduate), University of Edinburgh; designed and delivered lecture \textit{Image Provenance in the AI Era} \publink{https://kaikaiyao.github.io/guest-lecture-slides/}{Slides} & \fontsize{8.35}{9.8}\selectfont\color{muted}2025 -- 2026 \\
+\sqbullet & \textbf{Teaching Assistant \& Lab Demonstrator}, \textit{Privacy and Security with Machine Learning}, University of Edinburgh; led practical security/ML labs and coursework mentoring & \fontsize{8.35}{9.8}\selectfont\color{muted}2023 -- 2025 \\
+\sqbullet & \textbf{Teaching Assistant}, \textit{Mathematical and Computational Image Analysis}, Johns Hopkins University & \fontsize{8.35}{9.8}\selectfont\color{muted}2019 -- 2020 \\
+\sqbullet & \multicolumn{2}{@{}p{\dimexpr\textwidth-0.95em\relax}@{}}{\raggedright\textbf{Research Mentoring:} Mentored five undergraduate and postgraduate researchers across Johns Hopkins (Felipe Takaesu, Eliana Crentsil, Lucia Sablich, Shannon Flanary) and Edinburgh (Chunhan Fang).} \\
+\sqbullet & \multicolumn{2}{@{}p{\dimexpr\textwidth-0.95em\relax}@{}}{\raggedright\textbf{Teaching Readiness:} Prepared to teach Machine Learning, AI Security \& Trustworthy AI, Computer Vision, and graduate seminars on Trustworthy Visual Content Provenance \& AI Governance.}
 \end{tabularx}
 
 % --- HONORS & AWARDS ---
+\pdfbookmark[1]{Honors, Artifacts & References}{bm-honors}
+\Needspace{6\baselineskip}
 \section*{Honors, Fellowships \& Awards}
-\begin{tabularx}{\textwidth}{@{}>{\leavevmode}l@{\hspace{0.58em}} >{\raggedright\arraybackslash}X @{\hspace{1.2em}} r@{}}
-\sqbullet & Full PhD Scholarship, University of Edinburgh & \fontsize{8.5}{10}\selectfont\color{muted}2023 – 2026 \\
-\sqbullet & IEEE SaTML Conference Attendance Grant & \fontsize{8.5}{10}\selectfont\color{muted}2024, 2025, 2026 \\
-\sqbullet & Intel Division Awards: \textit{Fast Stable Diffusion on Intel CPU} (AIA, 2023); \textit{Neural Coder Partnering Alibaba Cloud} (CESG SW AI, 2023); \textit{Innovation of Neural Coder} (AIA, 2022) & \fontsize{8.5}{10}\selectfont\color{muted}2022 – 2023 \\
-\sqbullet & Departmental Research Fellowship, Johns Hopkins University & \fontsize{8.5}{10}\selectfont\color{muted}2017 \\
-\sqbullet & Outstanding Graduate of the Year, Fudan University & \fontsize{8.5}{10}\selectfont\color{muted}2017 \\
-\sqbullet & JASSO Full Scholarship for Undergraduate Exchange Students, Japanese Government & \fontsize{8.5}{10}\selectfont\color{muted}2014
+\begin{tabularx}{\textwidth}{@{}>{\leavevmode}l@{\hspace{0.55em}} >{\raggedright\arraybackslash}X @{\hspace{1.0em}} r@{}}
+\sqbullet & Full PhD Scholarship, University of Edinburgh & \fontsize{8.35}{9.8}\selectfont\color{muted}2023 -- 2026 \\
+\sqbullet & IEEE SaTML Conference Attendance Grant & \fontsize{8.35}{9.8}\selectfont\color{muted}2024, 2025, 2026 \\
+\sqbullet & Intel Division Awards: \textit{Fast Stable Diffusion on Intel CPU} (AIA, 2023); \textit{Neural Coder Partnering Alibaba Cloud} (CESG SW AI, 2023); \textit{Innovation of Neural Coder} (AIA, 2022) & \fontsize{8.35}{9.8}\selectfont\color{muted}2022 -- 2023 \\
+\sqbullet & Departmental Research Fellowship, Johns Hopkins University & \fontsize{8.35}{9.8}\selectfont\color{muted}2017 \\
+\sqbullet & Outstanding Graduate of the Year, Fudan University & \fontsize{8.35}{9.8}\selectfont\color{muted}2017
 \end{tabularx}
 
-% --- TECHNICAL SKILLS & LANGUAGES ---
-\section*{Technical Skills \& Languages}
-\begin{tabularx}{\textwidth}{@{}>{\leavevmode\headingfont\bfseries\color{navy}\raggedright\arraybackslash\fontsize{8.5}{10}\selectfont}p{3.35cm} >{\raggedright\arraybackslash}X@{}}
-Programming & Python (primary); C++, MATLAB, Java (working experience); SQL (working knowledge) \\
-AI Frameworks \& Vision & PyTorch, TensorFlow, Hugging Face Transformers, NumPy, Pandas, CNNs, U-Net, Diffusion, GANs, VAEs, image forensics, quantitative microscopy \\
-Security \& Evaluation & Threat modelling, adversarial evaluation, post-deployment auditing, watermarking \& fingerprinting, differential privacy, fairness measurement, fixed-FPR statistical calibration, ablation design \\
-Optimization \& Tooling & Intel Neural Compressor, IPEX, Neural Coder, INT8 quantization, model compression, inference benchmarking, static program analysis, Linux/Unix, Git, Docker, Kubernetes, LaTeX \\
-Spoken Languages & Mandarin Chinese (native); English (full professional proficiency; US MS \& UK PhD); Japanese (JLPT N1; one-year exchange at Osaka University)
+% --- OPEN-SOURCE ARTIFACTS & REFERENCES ---
+\Needspace{5\baselineskip}
+\section*{Open-Source Research Artifacts, Technical Writing \& References}
+\begin{tabularx}{\textwidth}{@{}>{\leavevmode\headingfont\bfseries\color{navy}\raggedright\arraybackslash\fontsize{8.45}{10.0}\selectfont}p{3.25cm} >{\raggedright\arraybackslash}X@{}}
+Research Codebases & Released reproducible evaluation and auditing codebases for \href{https://github.com/kaikaiyao/FARE}{FARE} (NeurIPS 2026), \href{https://github.com/kaikaiyao/pixels-alone-provenance}{Can Pixels Alone?} (NeurIPS 2026), and \href{https://github.com/kaikaiyao/SmudgedFingerprints}{Smudged Fingerprints} (IEEE SaTML 2026) \\
+Systems \& Writing & Technical Lead for \href{https://github.com/intel/neural-compressor/commits?author=kaikaiyao}{Intel Neural Compressor / Neural Coder} (40 upstream commits); co-author of \href{https://kaikaiyao.github.io/intel/}{four Intel Analytics Software technical articles} \\
+References & Academic references (University of Edinburgh PhD supervisors and research collaborators) are available upon request.
 \end{tabularx}
 \renewcommand{\arraystretch}{1.0}
 
